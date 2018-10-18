@@ -1,0 +1,13 @@
+#phonenumber {
+  display: flex;
+  width: 50%;
+  font-size: 2rem;
+  justify-content: center;
+  align-content: center;
+}
+p {
+  outline: solid orange 1px;
+}
+a {
+  font-size: 1.5rem;
+}
