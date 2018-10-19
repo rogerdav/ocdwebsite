@@ -6,8 +6,26 @@
   align-content: center;
 }
 p {
-  outline: solid orange 1px;
+  /* outline: solid orange 1px; */
 }
 a {
   font-size: 1.5rem;
+}
+
+.nav-item a {
+  padding: 5px 5px;
+}
+
+#logo {
+  font-style: italic;
+}
+#fixednavbar {
+  margin-bottom: 10px;
+}
+.phone {
+  border: solid black 1px;
+  border-radius: 10px;
+  padding: 5px 5px;
+  font-size: 2 rem;
+  font-weight: bolder;
 }

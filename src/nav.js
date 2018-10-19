@@ -7,13 +7,18 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
+ 
   Container,
   Row,
   Col,
   Jumbotron,
   Button
 } from 'reactstrap';
+import {
+  Route,
+  NavLink,
+  HashRouter
+} from "react-router-dom";
 
 class NavHeader extends Component {
   constructor(props) {
@@ -30,26 +35,29 @@ class NavHeader extends Component {
   }
   render() {
     return(
-      <Navbar color="success" light expand="md" >
+      <HashRouter>
+      <Navbar id="fixednavbar"color="success" light expand="md" fixed={`top`} >
           <NavbarBrand href="/">
-          <h1 id="logo">OCDcrew llc</h1>
+          <h1 id="logo">OCD crew</h1>
           </NavbarBrand>
-          <div id="phonenumber"><p>(206)3539012</p></div>
+          <div id="phonenumber"><span className="phone">(206)3539012</span></div>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
                   <NavItem>
-                      <NavLink href="/">Home</NavLink>
+                      <NavLink to="/">Home</NavLink>
                   </NavItem>
                   <NavItem>
-                      <NavLink href="/about">About</NavLink>
+                      <NavLink to="/about">About</NavLink>
                   </NavItem>
                   <NavItem>
-                      <NavLink href="/reviews">What other are saying</NavLink>
+                      <NavLink to="/reviews">What other are saying</NavLink>
                   </NavItem>
               </Nav>
           </Collapse>
       </Navbar>
+
+      </HashRouter>
     )
   }
 }

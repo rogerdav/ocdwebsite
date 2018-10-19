@@ -5,7 +5,7 @@ class Footer extends Component {
 
   render() {
     return (
-      <Jumbotron>
+      <div>
           <h1>Hello, world!</h1>
           <p>
             This is a simple hero unit, a simple jumbotron-style component for calling
@@ -13,7 +13,7 @@ class Footer extends Component {
           </p>
           
     
-      </Jumbotron>
+      </div>
     )
   }
 
