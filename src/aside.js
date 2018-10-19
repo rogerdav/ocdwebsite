@@ -8,23 +8,23 @@ class ContactAside extends Component {
       <Container className="contact">
         <Row>
           <Col>
-          <img src="https://png.icons8.com/windows/100/000000/contacts.png" />
+          <img src="https://png.icons8.com/windows/60/000000/contacts.png" />
           </Col>
         </Row>
 
         <Row>
           <Col>
-            (206) 353-9012
+            <h5>(206) 353-9012</h5>
           </Col>
         </Row>
         <Row>
           <Col>
-          <img src="https://png.icons8.com/ios/80/000000/email-filled.png" />
+          <a href="mailto:davenport.mandy@gmail.com"><img src="https://png.icons8.com/ios/40/000000/email-filled.png" /></a>
           </Col>
         </Row>
         <Row>
           <Col>
-          <a href="mailto:davenport.mandy@gmail.com"><h5>davenport.mandy@gmail.com</h5></a>
+          <h5>davenport.mandy@gmail.com</h5>
           </Col>
         </Row>
         {/* --------------------------------------------- */}

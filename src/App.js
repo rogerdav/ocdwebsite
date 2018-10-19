@@ -4,7 +4,7 @@ import './App.css';
 import Footer from './footer';
 import NavHeader from './nav';
 import Review from './reviews';
-import About from './about';
+import About from './aboutmandy';
 import ContactAside from './aside';
 import {
   Route,
@@ -12,6 +12,7 @@ import {
   HashRouter
 } from "react-router-dom";
 import { Container} from 'reactstrap';
+import AboutOcd from './aboutocd';
 
 
 
@@ -27,9 +28,9 @@ class App extends Component {
       </div>
       <HashRouter>
         <div id="content" className="container row twelve">
-        <Route exact path="/" component={Footer} />
+        <Route exact path="/" component={AboutOcd} />
         <Route path="/reviews" component={Review}/>
-        <Route path="/about" component={About} />
+        <Route exact path="/about" component={About} />
         </div>
       </HashRouter> 
       </Container>

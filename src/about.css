@@ -1,14 +1,11 @@
 .aboutInfo {
   font-size: 1em;
+  text-align: left;
 }
 .aboutInfo p {
     font-size: 0.1 rem;
     padding: 1% 0.2%;
-
-}
-
-div {
-  text-align: left;
+    text-align: left;
 }
 
 
@@ -23,6 +20,7 @@ div {
 .aboutInfo span {
  font-style: italic;
 }
-.heading {
+.aboutheading  {
   font-weight: bold;
+  font-size: 36px;
 }

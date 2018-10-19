@@ -5,8 +5,8 @@
   justify-content: center;
   align-content: center;
 }
-p {
-  /* outline: solid orange 1px; */
+#phonenumber p {
+ font-size: 1 em;
 }
 a {
   font-size: 1.5rem;
@@ -16,11 +16,29 @@ a {
   padding: 5px 5px;
 }
 
-#logo {
-  font-style: italic;
+#logo h1 {
+  color: #82ad40;
+  font-size: 4em;
+  font-weight: bold;
 }
+#logo h5 {
+  color: #82ad40;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+#logo {
+  padding-left: 15%;
+}
+
+
+
+
 #fixednavbar {
   margin-bottom: 10px;
+  background-color: black;
+  color: white;
+  border-bottom: #82ad40 solid 10px;
 }
 .phone {
   border: solid black 1px;
@@ -29,3 +47,4 @@ a {
   font-size: 2 rem;
   font-weight: bolder;
 }
+
