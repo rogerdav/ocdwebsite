@@ -1,0 +1,56 @@
+#phonenumber {
+  /* display: flex; */
+  width: 30%;
+  font-size: 2rem;
+  /* flex-direction: row; */
+  justify-content: center;
+  /* align-content: center; */
+  border-radius: 10px;
+  padding: 0px 15px;
+  margin-left: 8%;
+  color: lightgrey;
+
+}
+#phonenumber p {
+ font-size: 1 em;
+}
+a {
+  font-size: 1.5rem;
+  color: #82ad40;
+}
+
+.nav-item a {
+  padding: 5px 5px;
+}
+
+#logo h1 {
+  color: #82ad40;
+  font-size: 4em;
+  font-weight: bold;
+}
+#logo h5 {
+  color: #82ad40;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+#logo {
+  padding-left: 15%;
+}
+
+
+
+
+#fixednavbar {
+  margin-bottom: 10px;
+  background-color: black;
+  color: white;
+  border-bottom: #82ad40 solid 10px;
+}
+.phone {
+  
+  
+  font-size: 2 rem;
+  font-weight: bolder;
+}
+

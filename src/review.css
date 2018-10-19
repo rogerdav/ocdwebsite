@@ -1,0 +1,20 @@
+.review {
+  max-height: 500px;
+  padding: 20px;
+  /* border: solid 2px #82ad40; */
+  overflow-y: scroll;
+}
+.review p {
+  margin-top: 10px;
+  padding: 25px;
+  font-size: 1 rem;
+  border: solid #82ad40 1px;
+  font-style: italic;
+
+}
+
+.reviewer {
+  font-size: 1.2 rem;
+  color: #82ad40;
+  float: right;
+}
