@@ -1,6 +1,6 @@
 import React, { Component} from 'react';
 import './aside.css';
-import {Container, Row, Col} from 'reactstrap';
+import {Container, Row, Col, Button} from 'reactstrap';
 
 class ContactAside extends Component {
   render () {
@@ -8,7 +8,7 @@ class ContactAside extends Component {
       <Container className="contact">
         <Row>
           <Col>
-          <img src="https://png.icons8.com/windows/60/000000/contacts.png" />
+          <img src="https://png.icons8.com/windows/60/ffffff/contacts.png" />
           </Col>
         </Row>
 
@@ -19,7 +19,7 @@ class ContactAside extends Component {
         </Row>
         <Row>
           <Col>
-          <a href="mailto:davenport.mandy@gmail.com"><img src="https://png.icons8.com/ios/40/000000/email-filled.png" /></a>
+          <a href="mailto:davenport.mandy@gmail.com"><img src="https://png.icons8.com/ios/40/ffffff/email-filled.png" /></a>
           </Col>
         </Row>
         <Row>
@@ -27,10 +27,15 @@ class ContactAside extends Component {
           <h5>davenport.mandy@gmail.com</h5>
           </Col>
         </Row>
+        <Row>
+          <Col>
+            <Button color="white" className="callme">Click to Request A CallBack</Button>
+          </Col>
+        </Row>
         {/* --------------------------------------------- */}
         <Row className="contactheading">
           <Col xs="2">
-            <img src="https://png.icons8.com/ios/30/000000/clock.png" alt="" />
+            <img src="https://png.icons8.com/ios/30/ffffff/clock.png" alt="" />
           </Col>
           <Col xs="auto">
             <h5>When We Work</h5>
@@ -56,7 +61,7 @@ class ContactAside extends Component {
         {/* ----------------------------------------------- */}
         <Row className="contactheading">
           <Col xs="2">
-          <img src="https://png.icons8.com/ios/30/000000/marker.png" />
+          <img src="https://png.icons8.com/ios/30/ffffff/marker.png" />
 
           </Col>
           <Col xs="auto">
