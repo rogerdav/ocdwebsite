@@ -40,10 +40,10 @@ class NavHeader extends Component {
           <NavbarBrand href="/">
           <div id="logo"><h1>OCD Crew</h1><h5>Organizing, Cleaning and Detailing</h5></div>
           </NavbarBrand>
-          <div id="phonenumber"><p>For a free estimate call</p> <p className="phone">(206)3539012</p></div>
+          <div id="phonenumber"><p>For a free estimate call</p> <p id="phone">(206)3539012</p></div>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
-              <Nav className="mr-auto" navbar>
+              <Nav className="pull-right" navbar>
                   <NavItem>
                       <NavLink to="/">Home</NavLink>
                   </NavItem>
