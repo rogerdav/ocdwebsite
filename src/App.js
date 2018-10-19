@@ -13,6 +13,7 @@ import {
 } from "react-router-dom";
 import { Container} from 'reactstrap';
 import AboutOcd from './aboutocd';
+import PageFooter from './footer';
 
 
 
@@ -34,6 +35,7 @@ class App extends Component {
         </div>
       </HashRouter> 
       </Container>
+      <PageFooter />
       
       </div>
     );
