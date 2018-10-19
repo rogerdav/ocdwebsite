@@ -3,7 +3,7 @@ import './review.css';
 class Review extends Component {
   render() {
     return (
-      <div className="review">
+      <div className="review" >
         <h2>Reviews</h2>
         
         <div>

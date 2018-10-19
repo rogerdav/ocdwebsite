@@ -1,6 +1,8 @@
-.review div {
+.review {
+  max-height: 500px;
   padding: 20px;
-  border: solid 2px #82ad40;
+  /* border: solid 2px #82ad40; */
+  overflow-y: scroll;
 }
 .review p {
   margin-top: 10px;
