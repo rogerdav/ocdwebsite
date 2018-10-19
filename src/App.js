@@ -14,6 +14,8 @@ import {
 import { Container} from 'reactstrap';
 import AboutOcd from './aboutocd';
 import PageFooter from './footer';
+import Services from "./services";
+
 
 
 
@@ -22,7 +24,7 @@ class App extends Component {
     return (
       <div className="App">
       <NavHeader />
-      <img src="./pics/mandy.jpg" alt="" />
+      
       <Container id="all">
       <div id="aside">
         <ContactAside />
@@ -31,7 +33,8 @@ class App extends Component {
         <div id="content" className="container row twelve">
         <Route exact path="/" component={AboutOcd} />
         <Route path="/reviews" component={Review}/>
-        <Route exact path="/about" component={About} />
+        <Route path="/about" component={About} />
+        <Route path="/services" component={Services} />
         </div>
       </HashRouter> 
       </Container>

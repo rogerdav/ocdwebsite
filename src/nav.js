@@ -53,6 +53,9 @@ class NavHeader extends Component {
                   <NavItem>
                       <NavLink to="/reviews">What other's say</NavLink>
                   </NavItem>
+                  <NavItem>
+                      <NavLink to="/services">Services</NavLink>
+                  </NavItem>
               </Nav>
           </Collapse>
       </Navbar>
