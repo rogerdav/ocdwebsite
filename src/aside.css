@@ -1,6 +1,7 @@
 .contact {
-  background-color: rgb(218, 213, 213);
+  /* background-color: rgb(218, 213, 213); */
   text-align: center;
+  min-width: 340px;
 }
 
 .row div {
@@ -9,4 +10,7 @@
 
 #aside {
   text-align: center;
+}
+.contactheading {
+  padding-top: 40px;
 }

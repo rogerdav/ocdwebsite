@@ -43,7 +43,7 @@ class NavHeader extends Component {
           <div id="phonenumber"><span className="phone">(206)3539012</span></div>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
-              <Nav className="ml-auto" navbar>
+              <Nav className="mr-auto" navbar>
                   <NavItem>
                       <NavLink to="/">Home</NavLink>
                   </NavItem>
