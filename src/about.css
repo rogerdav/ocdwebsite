@@ -24,3 +24,7 @@
   font-weight: bold;
   font-size: 36px;
 }
+.green {
+  color: #82ad40;
+  border-bottom: solid black 3px;
+}
