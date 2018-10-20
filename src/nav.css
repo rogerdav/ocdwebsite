@@ -20,7 +20,12 @@ a {
 }
 
 .nav-item a {
-  padding: 5px 5px;
+  padding: 5px 25px;
+  
+}
+.nav-item a:hover {
+ color: white;
+  
 }
 
 #logo h1 {
@@ -29,13 +34,13 @@ a {
   /* font-weight: bold; */
 }
 #logo h5 {
-  color: #82ad40;
-  font-size: 1.1em;
+  color: lightgray;
+  font-size: 0.9em;
   /* font-weight: bold; */
 }
 
 #logo {
-  padding-left: 15%;
+  padding-left: 0%;
 }
 
 

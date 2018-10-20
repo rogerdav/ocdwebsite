@@ -38,12 +38,12 @@ class NavHeader extends Component {
       <HashRouter>
       <Navbar id="fixednavbar" light expand="sm" fixed={`top`} >
           <NavbarBrand href="/">
-          <div id="logo"><h1>OCD Crew</h1><h5>Organizing, Cleaning and Detailing</h5></div>
+          <div id="logo"><h1>OCD Crew</h1><h5>ORGANIZING, CLEANING AND DETAILING</h5></div>
+          {/* <div id="phonenumber"><span>For a free estimate call</span> <span id="phone">(206)3539012</span></div> */}
           </NavbarBrand>
-          <div id="phonenumber"><p>For a free estimate call</p> <p id="phone">(206)3539012</p></div>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
-              <Nav className="pull-right" navbar>
+              <Nav className="lr-auto" navbar>
                   <NavItem>
                       <NavLink to="/">Home</NavLink>
                   </NavItem>
@@ -51,10 +51,16 @@ class NavHeader extends Component {
                       <NavLink to="/about">About</NavLink>
                   </NavItem>
                   <NavItem>
-                      <NavLink to="/reviews">What other's say</NavLink>
+                      <NavLink to="/reviews">What Other's Say</NavLink>
                   </NavItem>
                   <NavItem>
                       <NavLink to="/services">Services</NavLink>
+                  </NavItem>
+                  <NavItem>
+                      <NavLink to="/giftcard">Gift Certificates</NavLink>
+                  </NavItem>
+                  <NavItem>
+                      <NavLink to="/jobs">Work for Us</NavLink>
                   </NavItem>
               </Nav>
           </Collapse>
