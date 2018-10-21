@@ -6,12 +6,12 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin-top: 174px;
+  margin-top: 169px;
   
   
 }
  #root {
-  background-image: url("./pics/leaf.png");
+  background-image: url("../pics/leaf.png");
   background-repeat: repeat;
  }
 

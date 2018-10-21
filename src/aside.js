@@ -1,19 +1,29 @@
 import React, { Component} from 'react';
-import './aside.css';
+import './style/aside.css';
 import {Container, Row, Col, Button} from 'reactstrap';
+import ModalCall from './callmodal'
 
 class ContactAside extends Component {
   constructor (props) {
-    super(props)
+    super(props);
+    this.state= {
+      modalAside: false,
+    }
+  this.openModal = this.openModal.bind(this);
     
   }
-  
+  openModal() {
+    this.setState({
+      modalAside: !this.state.modalAside,
+    });
+  }  
   render () {
     return ( 
       <Container className="contact">
+      <ModalCall modal={this.state.modalAside} onClick={this.openModal}/>
         <Row>
           <Col>
-          <img className="icon" src="https://png.icons8.com/windows/60/82ad40/contacts.png" />
+          <img className="icon" src="https://png.icons8.com/windows/60/82ad40/contacts.png" alt=""/>
           </Col>
         </Row>
 
@@ -24,7 +34,7 @@ class ContactAside extends Component {
         </Row>
         <Row>
           <Col>
-          <a href="mailto:davenport.mandy@gmail.com" ><img className="icon" src="https://png.icons8.com/ios/40/82ad40/email-filled.png" /></a>
+          <a href="mailto:davenport.mandy@gmail.com" ><img className="icon" src="https://png.icons8.com/ios/40/82ad40/email-filled.png" alt="" /></a>
           </Col>
         </Row>
         <Row>
@@ -34,7 +44,7 @@ class ContactAside extends Component {
         </Row>
         <Row>
           <Col>
-            <Button color="white" className="callme" >Click to Request A CallBack</Button>
+            <Button color="white" className="callme"  onClick={this.openModal}>Request A CallBack</Button>
           </Col>
         </Row>
         {/* --------------------------------------------- */}
@@ -66,7 +76,7 @@ class ContactAside extends Component {
         {/* ----------------------------------------------- */}
         <Row className="contactheading">
           <Col xs="2">
-          <img src="https://png.icons8.com/ios/30/82ad40/marker.png" />
+          <img src="https://png.icons8.com/ios/30/82ad40/marker.png" alt="" />
 
           </Col>
           <Col xs="auto">

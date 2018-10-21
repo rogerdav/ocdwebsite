@@ -1,34 +1,53 @@
 import React from 'react';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 
-class ModalExample extends React.Component {
+class ModalCall extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      modal: false
+      
     };
 
     this.toggle = this.toggle.bind(this);
   }
 
   toggle() {
-    this.setState({
-      modal: !this.state.modal
-    });
+    this.props.onClick();
   }
 
   render() {
     return (
       <div>
         
-        <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
-          <ModalHeader toggle={this.toggle}>Modal title</ModalHeader>
+        <Modal isOpen={this.props.modal} toggle={this.toggle} className={this.props.className}>
+          <ModalHeader toggle={this.toggle}>Request A Call</ModalHeader>
           <ModalBody>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <Form>
+            <FormGroup>
+              <Label for="name">Name</Label>
+              <Input type="text" name="name" id="name" placeholder="name required" />
+            </FormGroup>
+            <FormGroup>
+              <Label for="phone_number">Phone Number</Label>
+              <Input type="text" name="phone_number" id="phone_number" placeholder="phone number required" />
+            </FormGroup>
+            <FormGroup>
+              <Label for="email">Email</Label>
+              <Input type="email" name="email" id="email" placeholder="email optional" />
+            </FormGroup>
+            <FormGroup>
+              <Label for="time">Best Time To Call</Label>
+              <Input type="text" name="time" id="time" placeholder="bet time to call during business hours" />
+            </FormGroup>
+            <FormGroup>
+              <Label for="message">Message</Label>
+              <Input type="textarea" name="message" id="message" placeholder="Any additional info" />
+            </FormGroup>
+          </Form>
           </ModalBody>
           <ModalFooter>
-            <Button color="primary" onClick={this.toggle}>Do Something</Button>{' '}
-            <Button color="secondary" onClick={this.toggle}>Cancel</Button>
+            <Button color="primary" onClick={this.toggle}>Submit Request</Button>
+            <Button color="secondary" onClick={this.props.onClick}>Cancel</Button>
           </ModalFooter>
         </Modal>
       </div>
@@ -36,4 +55,4 @@ class ModalExample extends React.Component {
   }
 }
 
-export default ModalExample;
+export default ModalCall;
