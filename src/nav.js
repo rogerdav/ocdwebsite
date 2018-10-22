@@ -1,5 +1,5 @@
 import React, { Component} from 'react';
-import './nav.css'
+import './style/nav.css'
 import {
   Collapse,
   Navbar,
@@ -43,7 +43,7 @@ class NavHeader extends Component {
           </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
-              <Nav className="lr-auto" navbar>
+              <Nav className="mr-auto" navbar>
                   <NavItem>
                       <NavLink to="/">Home</NavLink>
                   </NavItem>

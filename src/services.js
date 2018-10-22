@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Container, Row, Col} from 'reactstrap';
-import './services.css';
+import './style/services.css';
  
 class Services extends Component {
   render() {

@@ -1,6 +1,6 @@
 import React, { Component} from 'react';
 import {Jumbotron} from 'react-bootstrap';
-import './footer.css';
+import './style/footer.css';
 
 class PageFooter extends Component {
 
