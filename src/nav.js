@@ -60,7 +60,7 @@ class NavHeader extends Component {
                       <NavLink to="/giftcard">Gift Certificates</NavLink>
                   </NavItem>
                   <NavItem>
-                      <NavLink to="/jobs">Work for Us</NavLink>
+                      <NavLink to="/employment">Work for Us</NavLink>
                   </NavItem>
               </Nav>
           </Collapse>

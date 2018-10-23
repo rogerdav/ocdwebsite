@@ -14,7 +14,8 @@ import {
 import { Container} from 'reactstrap';
 import AboutOcd from './aboutocd';
 import PageFooter from './footer';
-import Services from "./services";
+import Services from './services';
+import Employment from './workforus';
 
 
 
@@ -35,6 +36,7 @@ class App extends Component {
         <Route path="/reviews" component={Review}/>
         <Route path="/about" component={About} />
         <Route path="/services" component={Services} />
+        <Route path="/employment" component={Employment} />
         </div>
       </HashRouter> 
       </Container>
