@@ -1,0 +1,10 @@
+.employment p {
+  text-align: left;
+}
+
+.applyButton {
+  margin-top: 15%;
+  background-color: #82ad40;
+  border-color: #82ad40;
+  font-size: 1.5em;
+}
