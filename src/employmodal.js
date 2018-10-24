@@ -79,8 +79,8 @@ class ModalEmployment extends React.Component {
                       Are you eligible to work in US?
                   </Label>
                 </FormGroup>
-                <FormGroup>
-                  <Label for="message">A Bit About You</Label>
+                <FormGroup className="upload">
+                  <Label for="message">Copy and Paste resume below / Tell us about your work history</Label>
                   <Input type="textarea" name="message" id="message" placeholder="Any additional info" onChange={this.handleInputChange} />
                 </FormGroup>
               </Form>
