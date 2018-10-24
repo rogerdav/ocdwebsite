@@ -9,8 +9,10 @@ class Employment extends Component {
     super(props);
     this.state = {
       modalEmploy: false,
+      resume: [],
     }
   this.openModal = this.openModal.bind(this);
+  
     
   }
   openModal() {

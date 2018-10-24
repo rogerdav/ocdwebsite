@@ -51,7 +51,7 @@ class NavHeader extends Component {
                       <NavLink to="/about">About</NavLink>
                   </NavItem>
                   <NavItem>
-                      <NavLink to="/reviews">What Other's Say</NavLink>
+                      <NavLink to="/reviews">What Clients Say</NavLink>
                   </NavItem>
                   <NavItem>
                       <NavLink to="/services">Services</NavLink>

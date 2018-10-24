@@ -1,4 +1,8 @@
 .pagefooter {
   background-color: #82ad40;
   color: black;
+
+}
+.pagefooter p {
+  margin-bottom: 0%;
 }

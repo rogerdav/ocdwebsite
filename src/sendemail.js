@@ -11,12 +11,13 @@ module.exports = function(formInfo) {
   const sender = 'Sender Name <roger.neil.davenport@gmail.com>';
   const recipient = 'roger@roger-davenport.com';
   // let dayForSubject = formInfo.date.getDay();
-  const subject = `Job Application ${formInfo.date}`;
+  const subject = `${formInfo.subject} `;
 
   // The email body for recipients with non-HTML email clients.
   const body_text = 'Request for quote this is the body of the message';
             
   // The HTML body of the email.
+  // console.log("body resume after map", body_resume);
   const body_html = `<html>
 <head></head>
 <body>
@@ -29,7 +30,7 @@ module.exports = function(formInfo) {
  <li>Message: ${formInfo.message}</li>
  <li>File: ${formInfo.file}</li>
   </ul>
-  
+ 
 </body>
 </html>`;
 
@@ -68,15 +69,15 @@ module.exports = function(formInfo) {
   };
   
   //Try to send the email.
-  ses.sendEmail(params, function(err, data) {
-    // If something goes wrong, print an error message.
+  // ses.sendEmail(params, function(err, data) {
+  //   // If something goes wrong, print an error message.
     
-    if(err) {
-      console.log(err.message);
-    } else {
-      console.log('Email sent! Message ID: ', data.MessageId);
-    }
-  });
+  //   if(err) {
+  //     console.log(err.message);
+  //   } else {
+  //     console.log('Email sent! Message ID: ', data.MessageId);
+  //   }
+  // });
 
 
 

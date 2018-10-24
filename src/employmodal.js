@@ -15,6 +15,9 @@ class ModalEmployment extends React.Component {
       message: '',
       file: '',
       submitted: false,
+      resume: [],
+      subject: 'Job Application',
+
       
     };
 
@@ -38,10 +41,15 @@ class ModalEmployment extends React.Component {
   }
 
   submitApplication() {
-  
-    sendEmail(this.state);
+    let fileArray = this.state.message.split('\n');
+    this.setState({
+      submitted: true,
+      resume: fileArray,
+
+    });
+
     this.toggle();
-    this.setState({submitted: true});
+    sendEmail(this.state);
     console.log('this process is complete');
   }
 

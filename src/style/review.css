@@ -10,11 +10,13 @@
   font-size: 1 rem;
   border: solid #82ad40 1px;
   font-style: italic;
+  text-align: left;
 
 }
 
 .reviewer {
   font-size: 1.2 rem;
+  font-weight: bold;
   color: #82ad40;
   float: right;
 }
