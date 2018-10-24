@@ -18,8 +18,8 @@ module.exports = function(formInfo) {
   const body_text = `${formInfo.subject}`;
   let body_resume;
   if (formInfo.subject === 'Job Application') {
-    body_resume = `<li>Resume from ${formInfo.name}</li>`;
-    body_resume = formInfo.resume.map( item => `<li>${item}</li>`).join("");
+    body_resume = `<p>Resume from ${formInfo.name}</p>`;
+    body_resume = formInfo.resume.map( item => `<p>${item}</p>`).join("");
   }
   if (formInfo.subject === 'Request For Estimate') {
     body_resume = ``;
@@ -37,9 +37,9 @@ module.exports = function(formInfo) {
     <li>Date and Time: ${formInfo.date}</li>
     <li>Message:${formInfo.message} </li>
     <li>--------------------------------------</li>
-    <li>Resume</li>
+    <li><h3>Resume<h3></li>
+    </ul>
     ${body_resume}
-  </ul>
 </body>
 </html>`;
 // console.log('html body', body_html);
