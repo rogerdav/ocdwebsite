@@ -42,15 +42,15 @@ class ModalEmployment extends React.Component {
 
   submitApplication() {
     let fileArray = this.state.message.split('\n');
-    this.setState({
-      submitted: true,
-      resume: fileArray,
-
-    });
-
-    this.toggle();
-    sendEmail(this.state);
-    console.log('this process is complete');
+    this.setState(prevState => ({
+      resume : fileArray,
+      message: '',
+     }), function() {
+       this.toggle();
+       sendEmail(this.state);
+      
+     })
+   
   }
 
   render() {
@@ -60,37 +60,30 @@ class ModalEmployment extends React.Component {
         <Modal isOpen={this.props.modal} toggle={this.toggle} className={this.props.className}>
           <ModalHeader toggle={this.toggle}>Apply Now</ModalHeader>
           <ModalBody>
-          <Form>
-            <FormGroup>
-              <Label for="name">Name</Label>
-              <Input type="text" name="name" id="name" placeholder="name required" onChange={this.handleInputChange} />
-            </FormGroup>
-            <FormGroup>
-              <Label for="phone_number">Phone Number</Label>
-              <Input type="text" name="phone_number" id="phone_number" placeholder="phone number required" onChange={this.handleInputChange} />
-            </FormGroup>
-            <FormGroup>
-              <Label for="email">Email</Label>
-              <Input type="email" name="email" id="email" placeholder="email optional" onChange={this.handleInputChange}/>
-            </FormGroup>
-            <FormGroup check>
-          <Label check>
-            <Input type="checkbox" id="canwork" onClick={this.handleChecked} />
-            Are you eligible to work in US?
-          </Label>
-        </FormGroup>
-            <FormGroup>
-              <Label for="message">A Bit About You</Label>
-              <Input type="textarea" name="message" id="message" placeholder="Any additional info" onChange={this.handleInputChange} />
-            </FormGroup>
-          </Form>
-          <FormGroup>
-          <Label for="exampleFile">Click to upload Resume</Label>
-          <Input type="file" name="file" id="exampleFile" onChange={this.handleInputChange} />
-          <FormText color="muted">
-            Please upload resume in PDF format
-          </FormText>
-        </FormGroup>
+              <Form>
+                <FormGroup>
+                  <Label for="name">Name</Label>
+                  <Input type="text" name="name" id="name" placeholder="name required" onChange={this.handleInputChange} />
+                </FormGroup>
+                <FormGroup>
+                  <Label for="phone_number">Phone Number</Label>
+                  <Input type="text" name="phone_number" id="phone_number" placeholder="phone number required" onChange={this.handleInputChange} />
+                </FormGroup>
+                <FormGroup>
+                  <Label for="email">Email</Label>
+                  <Input type="email" name="email" id="email" placeholder="email optional" onChange={this.handleInputChange}/>
+                </FormGroup>
+                <FormGroup check>
+                  <Label check>
+                    <Input type="checkbox" id="canwork" onClick={this.handleChecked} />
+                      Are you eligible to work in US?
+                  </Label>
+                </FormGroup>
+                <FormGroup className="upload">
+                  <Label for="message">Copy and Paste resume below / Tell us about your work history</Label>
+                  <Input type="textarea" name="message" id="message" placeholder="Any additional info" onChange={this.handleInputChange} />
+                </FormGroup>
+              </Form>
           </ModalBody>
           <ModalFooter>
             <Button color="primary" onClick={this.submitApplication}>Submit Application</Button>

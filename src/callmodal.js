@@ -18,7 +18,7 @@ class ModalCall extends React.Component {
   render() {
     return (
       <div>
-        {/* <hello></hello> */}
+        
         <Modal isOpen={this.props.modal} toggle={this.toggle} className={this.props.className}>
           <ModalHeader toggle={this.toggle}>Request A Call</ModalHeader>
           <ModalBody>
