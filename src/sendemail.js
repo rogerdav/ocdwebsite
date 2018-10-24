@@ -12,7 +12,7 @@ module.exports = function(formInfo) {
   const sender = 'Sender Name <roger.neil.davenport@gmail.com>';
   const recipient = 'roger@roger-davenport.com';
   // let dayForSubject = formInfo.date.getDay();
-  const subject = `${formInfo.subject} `;
+  const subject = `${formInfo.subject} from ${formInfo.name}`;
 
   // The email body for recipients with non-HTML email clients.
   const body_text = `${formInfo.subject}`;
@@ -34,6 +34,7 @@ module.exports = function(formInfo) {
     <li>Name: ${formInfo.name}</li>
     <li>Email: ${formInfo.email}</li>
     <li>Phone: ${formInfo.phone_number}</li>
+    <li>Eligible to work: ${formInfo.canwork}</li>
     <li>Date and Time: ${formInfo.date}</li>
     <li>Message:${formInfo.message} </li>
     <li>--------------------------------------</li>
