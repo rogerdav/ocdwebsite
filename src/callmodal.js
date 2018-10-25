@@ -37,7 +37,7 @@ class ModalCall extends React.Component {
             </FormGroup>
             <FormGroup>
               <Label for="time">Best Time To Call</Label>
-              <Input type="text" name="time" id="time" placeholder="bet time to call during business hours" />
+              <Input type="text" name="time" id="time" placeholder="best time to call during business hours" />
             </FormGroup>
             <FormGroup>
               <Label for="message">Message</Label>
@@ -46,7 +46,7 @@ class ModalCall extends React.Component {
           </Form>
           </ModalBody>
           <ModalFooter>
-            <Button color="primary" onClick={this.toggle}>Submit Request</Button>
+            <Button className="submitbutton"color="primary" onClick={this.toggle}>Submit Request</Button>
             <Button color="secondary" onClick={this.props.onClick}>Cancel</Button>
           </ModalFooter>
         </Modal>

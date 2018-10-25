@@ -5,7 +5,7 @@ class AboutMandy extends Component {
   render() {
     return (
       <div className="aboutInfo">
-        <p className="aboutheading">
+        <p className="contentheading">
           About Mandy (Founder and CEO) 
         </p>
         

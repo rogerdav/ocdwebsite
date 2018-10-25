@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 import sendEmail from './sendemail';
+import './style/workforus.css';
 
 
 class ModalEmployment extends React.Component {

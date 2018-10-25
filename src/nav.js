@@ -36,10 +36,10 @@ class NavHeader extends Component {
   render() {
     return(
       <HashRouter>
-      <Navbar id="fixednavbar" light expand="sm" fixed={`top`} >
+      <Navbar id="fixednavbar" light expand="xl">
           <NavbarBrand href="/">
           <div id="logo"><h1>OCD Crew</h1><h5>ORGANIZING, CLEANING AND DETAILING</h5></div>
-          {/* <div id="phonenumber"><span>For a free estimate call</span> <span id="phone">(206)3539012</span></div> */}
+          
           </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>

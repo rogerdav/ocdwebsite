@@ -29,12 +29,15 @@ class ContactAside extends Component {
 
         <Row>
           <Col>
-            <h5>(206) 353-9012</h5>
+          <a href="tel:+1-206-353-9012"><h5>(206) 353-9012</h5></a>
+            
           </Col>
         </Row>
         <Row>
           <Col>
-          <a href="mailto:davenport.mandy@gmail.com" ><img className="icon" src="https://png.icons8.com/ios/40/82ad40/email-filled.png" alt="" /></a>
+          <a href="mailto:davenport.mandy@gmail.com" >
+          <img className="icon" src="https://png.icons8.com/ios/40/82ad40/email-filled.png" alt="" />
+          </a>
           </Col>
         </Row>
         <Row>
@@ -49,77 +52,79 @@ class ContactAside extends Component {
         </Row>
         {/* --------------------------------------------- */}
         <Row className="contactheading">
-          <Col xs="2">
-            <img src="https://png.icons8.com/ios/30/82ad40/clock.png" alt="" />
-          </Col>
-          <Col xs="auto">
+          <Col className="col-sm-12">
+            <img src="https://png.icons8.com/ios/30/000000/clock.png" alt="" />
             <h5>When We Work</h5>
           </Col>
+          {/* <Col className="col-sm-10">
+          </Col> */}
         </Row>
         <Row>
-            <Col sm={{ size: 'auto', offset: 2 }}>
+            {/* <Col sm={{ size: 'auto', offset: 2 }}> */}
+            <Col className="col-6">
               <h6>Mon - Fri</h6>
             </Col>
-            <Col xs="auto">
+            <Col className="col-6">
               <h6>9am - 4:30pm</h6>
             </Col>
         </Row>
         <Row>
-            <Col sm={{ size: 'auto', offset: 2 }}>
+            {/* <Col sm={{ size: 'auto', offset: 2 }}> */}
+            <Col className="col-6">
               <h6>Sat - Sun</h6>
             </Col>
-            <Col xs="auto">
+            <Col className="col-6">
               <h6>By Request Only</h6>
             </Col>
         </Row>
         
         {/* ----------------------------------------------- */}
         <Row className="contactheading">
-          <Col xs="2">
-          <img src="https://png.icons8.com/ios/30/82ad40/marker.png" alt="" />
+          <Col className="col-sm-12">
+          <img src="https://png.icons8.com/ios/30/000000/marker.png" alt="" />
+          <h5>Where We Work</h5>
 
           </Col>
-          <Col xs="auto">
-          <h5>Where We Work</h5>
-          </Col>
+          {/* <Col className="col-sm-6 mr-3">
+          </Col> */}
         </Row>
         <Row>
-          <Col sm={{ size: 'auto', offset: 2 }}>
+          <Col sm={{ size: 'auto', offset: 1 }}>
             <h6>
               West Seattle
             </h6>
           </Col>
         </Row>
         <Row>
-          <Col sm={{ size: 'auto', offset: 2 }}>
+          <Col sm={{ size: 'auto', offset: 1 }}>
             <h6>
               Downtown Core
             </h6>
           </Col>
         </Row>
         <Row>
-          <Col sm={{ size: 'auto', offset: 2 }}>
+          <Col sm={{ size: 'auto', offset: 1 }}>
             <h6>
               Magnolia
             </h6>
           </Col>
         </Row>
         <Row>
-          <Col sm={{ size: 'auto', offset: 2 }}>
+          <Col sm={{ size: 'auto', offset: 1 }}>
             <h6>
               Queen Anne
             </h6>
           </Col>
         </Row>
         <Row>
-          <Col sm={{ size: 'auto', offset: 2 }}>
+          <Col sm={{ size: 'auto', offset: 1 }}>
             <h6>
              Burien
             </h6>
           </Col>
         </Row>
         <Row>
-          <Col sm={{ size: 'auto', offset: 2 }}>
+          <Col sm={{ size: 'auto', offset: 1 }}>
             <h6>
               Renton
             </h6>

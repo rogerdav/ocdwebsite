@@ -1,12 +1,12 @@
 .contact {
-  /* background-color: rgb(218, 213, 213); */
   text-align: center;
-  min-width: 340px;
- 
-  background: black;
+  min-width: 320px;
+  height: 100%;
+  background: grey;
   color: white;
   opacity: 0.75;
 }
+
 
 .row div {
   text-align: center;
@@ -14,7 +14,28 @@
 
 #aside {
   text-align: center;
+ 
 }
+a > h5 {
+  color: white;
+}
+.contact {
+  animation-duration: 2s;
+  animation-name: slidein_left;
+}
+
+@keyframes slidein_left {
+  from {
+    margin-left: -100%;
+    width: 0%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
 .contactheading {
   padding-top: 40px;
 }
@@ -26,3 +47,9 @@
 .icon {
   margin-top: 10%;
 }
+@media screen and (max-width: 300px) {
+   .contact h5 {
+     font-size: 0.8em;
+   }
+      
+  }
