@@ -36,7 +36,7 @@ class NavHeader extends Component {
   render() {
     return(
       <HashRouter>
-      <Navbar id="fixednavbar" light expand="lg" fixed={`top`} color="black" >
+      <Navbar id="fixednavbar" light expand="xl">
           <NavbarBrand href="/">
           <div id="logo"><h1>OCD Crew</h1><h5>ORGANIZING, CLEANING AND DETAILING</h5></div>
           

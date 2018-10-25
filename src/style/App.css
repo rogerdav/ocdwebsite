@@ -10,7 +10,7 @@ a:link {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 169px;
+  /* margin-top: 169px; */
   
   
 }
@@ -21,10 +21,10 @@ a:link {
   background-size: 100%;
  }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 960px) {
   #all {
       flex-direction: column-reverse;
-      margin-top: 55%;
+      /* margin-top: 55%; */
 
   }
   #root {
@@ -32,7 +32,7 @@ a:link {
   }
 }
  
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 961px) {
   #all {
       flex-direction: row;
   }
