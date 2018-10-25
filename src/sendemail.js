@@ -43,20 +43,20 @@ module.exports = function(formInfo) {
     };
 
   if (formInfo.subject === 'Call Request') {
-    
+    let tel_href = `tel:+1-`
     body_html = 
     `<html>
      <head></head>
      <body>
      <h1>${formInfo.subject}</h1>
      <ul>
-        <li>Name: ${formInfo.name}</li>
-        <li>Email: ${formInfo.email}</li>
-        <li>Phone: ${formInfo.phone_number}</li>
-        <li>Date and Time: ${formInfo.date}</li>
-        <li>Message:${formInfo.message} </li>
-        <li>Best Time: ${formInfo.time} </li>
-        <li>--------------------------------------</li>
+        <li><h3>Name: ${formInfo.name}</h3></li>
+        <li><h3>Email: ${formInfo.email}</h3></li>
+        <li><a href="tel:+1-206-353-9012"><h5>${formInfo.phone_number}</h5></a></li>
+        <li><h3>Date and Time: ${formInfo.date}</h3></li>
+        <li><h3>Message:${formInfo.message} </h3></li>
+        <li><h3>Best Time: ${formInfo.time} </h3></li>
+        <li><h3>--------------------------------------</h3></li>
      </ul>
       
       </body>

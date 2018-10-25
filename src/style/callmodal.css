@@ -1,0 +1,17 @@
+.invalidstatement {
+  display: none;
+
+}
+#phone_number:invalid {
+  border: solid red 1px;
+  
+}
+#phone_number:invalid ~ .invalidstatement {
+  display: block;
+}
+#email:invalid {
+  border: solid red 1px;
+}
+#email:invalid ~ .invalidstatement {
+  display: block;
+}

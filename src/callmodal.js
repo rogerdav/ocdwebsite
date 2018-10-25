@@ -1,6 +1,7 @@
 import React from 'react';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Form, FormGroup, Label, Input, FormText, FormFeedback } from 'reactstrap';
 import sendEmail from './sendemail';
+import './style/callmodal.css';
 
 class ModalCall extends React.Component {
   constructor(props) {
@@ -50,11 +51,17 @@ class ModalCall extends React.Component {
             </FormGroup>
             <FormGroup>
               <Label for="phone_number">Phone Number</Label>
-              <Input type="text" name="phone_number" id="phone_number" placeholder="phone number required" onChange={this.handleInputChange} />
+              <Input type="tel" 
+                      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
+                      name="phone_number" 
+                      id="phone_number" 
+                      placeholder="123-456-7890" onChange={this.handleInputChange} />
+              <p className="invalidstatement">That is an invalid format</p>
             </FormGroup>
             <FormGroup>
               <Label for="email">Email</Label>
               <Input type="email" name="email" id="email" placeholder="email optional" onChange={this.handleInputChange}/>
+              <p className="invalidstatement">That is an invalid format</p>
             </FormGroup>
             <FormGroup>
               <Label for="time">Best Time To Call</Label>
