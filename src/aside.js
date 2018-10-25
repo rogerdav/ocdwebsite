@@ -29,7 +29,8 @@ class ContactAside extends Component {
 
         <Row>
           <Col>
-            <h5>(206) 353-9012</h5>
+          <a href="tel:+1-206-353-9012"><h5>(206) 353-9012</h5></a>
+            
           </Col>
         </Row>
         <Row>

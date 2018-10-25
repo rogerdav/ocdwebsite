@@ -66,3 +66,8 @@ a:link {
   font-size: 2em;
   border: none;
 }
+.btn-primary {
+  background: #82ad40;
+  color: white;
+  border: none;
+}

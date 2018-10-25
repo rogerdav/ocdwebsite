@@ -16,6 +16,9 @@
   text-align: center;
  
 }
+a > h5 {
+  color: white;
+}
 .contact {
   animation-duration: 2s;
   animation-name: slidein_left;
