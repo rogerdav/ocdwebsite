@@ -3,7 +3,7 @@
   text-align: left;
 }
 .aboutInfo p {
-    font-size: 0.1 rem;
+    font-size: 0.1 em;
     padding: 1% 0.2%;
     text-align: left;
 }
@@ -20,10 +20,7 @@
 .aboutInfo span {
  font-style: italic;
 }
-.aboutheading  {
-  font-weight: bold;
-  font-size: 36px;
-}
+
 .green {
   color: #82ad40;
   border-bottom: solid black 3px;

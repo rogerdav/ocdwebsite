@@ -1,19 +1,12 @@
 #phonenumber {
-  /* display: flex; */
   width: 25%;
-  /* font-size: 2em; */
-  /* flex-direction: row; */
   justify-content: center;
-  /* align-content: center; */
   border-radius: 10px;
   padding: 0px 15px;
   margin-left: 5%;
   color: lightgrey;
+}
 
-}
-#phonenumber p {
- /* font-size: 1em; */
-}
 a {
   font-size: 1.5rem;
   color: #82ad40;
@@ -25,26 +18,24 @@ a {
 }
 .nav-item a:hover {
  color: white;
-  
 }
 
 #logo h1 {
   color: #82ad40;
   font-size: 4em;
-  /* font-weight: bold; */
 }
 #logo h5 {
   color: lightgray;
   font-size: 0.9em;
-  /* font-weight: bold; */
-}
+ }
 
 #logo {
   padding-left: 0%;
 }
 
-.navbar-toggler-icon {
-  color: greenyellow;
+.navbar-light .navbar-toggler-icon {
+ background-image: url("https://png.icons8.com/material/40/82ad40/menu.png");
+
 }
 
 
@@ -55,8 +46,13 @@ a {
   border-bottom: #82ad40 solid 10px;
 }
 #phone {
-   
   font-size: 2.5em;
-  /* font-weight: bolder; */
-}
+ }
 
+ @media screen and (min-width: 300px) {
+  #logo h1 {
+    color: #82ad40;
+    font-size: 3em;
+  }
+
+ }

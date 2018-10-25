@@ -3,10 +3,10 @@ import './style/review.css';
 class Review extends Component {
   render() {
     return (
-      <div className="review" >
-        <h2>Reviews</h2>
+      <div>
+        <p className="contentheading">Reviews</p>
         
-        <div>
+        <div className="review">
         <p>From the time I called Mandy to the actual service being done she exceeded expectations! Being responsive, useful suggestions and answered all of my questions. She is super detail oriented, hard working and did a great job, the name OCD cleaning is fitting and what else would you want with a cleaner?! Mandy has enhanced the reputation of my Corporate Housing company with her standards and I am forever grateful for her job well done, every time!<span className="reviewer">     Jenell T.</span></p>
         
         <p>Mandy’s professionalism shines through every room she cleans. But there is also so much more to her than just cleaning your home. Mandy’s passion is in helping you make a space your home. She has taken my small space and helped me arrange it so that it looks breath-taking. 

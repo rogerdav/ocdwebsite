@@ -5,7 +5,7 @@ class AboutOcd extends Component {
   render() {
     return (
       <div className="aboutInfo">
-        <p className="aboutheading">
+        <p className="contentheading">
           <span className="green">OCD Crew</span>
         </p>
         <p>

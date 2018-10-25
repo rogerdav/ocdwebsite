@@ -24,7 +24,7 @@ class Employment extends Component {
     return (
       <div className="employment">
         <ModalEmployment modal={this.state.modalEmploy} onClick={this.openModal}/>
-        <h2>Work for us</h2>
+        <p className="contentheading">Work for us</p>
         <p>
         We are a full service cleaning company built for the now, we partner with our clients to help them in their busy lives to ensure they have the time for what matters most to them.
         </p>

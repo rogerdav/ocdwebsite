@@ -1,69 +1,68 @@
 .App {
   text-align: center;
 }
+a:link {
+  text-decoration: none;
+}
+
 #all {
   text-align: center;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin-top: 169px;
   
   
 }
+
  #root {
-  background-image: url("../pics/seattle.jpg");
-  background-repeat: repeat;
+  background-image: url("../pics/test2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
  }
 
-@media screen and (min-width: 400px) {
+@media screen and (max-width: 480px) {
   #all {
       flex-direction: column-reverse;
+      margin-top: 55%;
+
+  }
+  #root {
+    background-image: url('');
   }
 }
  
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 900px) {
   #all {
       flex-direction: row;
   }
 }
 
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-/* #aside {
-  width: 400px;
-  height: 500px;
- 
-} */
-
 #content {
   background-color: lightgray;
   padding: 3% 8%;
-  opacity: 0.9;
+  opacity: 0.8;
+}
+
+#content {
+  animation-duration: 2s;
+  animation-name: slidein_right;
+}
+
+@keyframes slidein_right {
+  from {
+    margin-right: -100%;
+    width: 200%; 
+  }
+
+  to {
+    margin-right: 0%;
+    width: 100%;
+  }
+}
+.contentheading  {
+  font-weight: bold;
+  font-size: 2em;
+  border: none;
 }
