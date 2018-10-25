@@ -9,7 +9,7 @@ module.exports = function(formInfo) {
   // console.log('formInfo at top of send email', formInfo.resume)
 
 // This address must be verified with Amazon SES.
-  const sender = 'Sender Name <roger.neil.davenport@gmail.com>';
+  const sender = 'Sender Name <roger@davenport-home.com>';
   const recipient = 'roger@roger-davenport.com';
   // let dayForSubject = formInfo.date.getDay();
   const subject = `${formInfo.subject} from ${formInfo.name}`;
@@ -43,7 +43,7 @@ module.exports = function(formInfo) {
     };
 
   if (formInfo.subject === 'Call Request') {
-    let tel_href = `tel:+1-`
+    let tel_href = `tel:+1-${formInfo.phone_number}`
     body_html = 
     `<html>
      <head></head>
@@ -52,7 +52,7 @@ module.exports = function(formInfo) {
      <ul>
         <li><h3>Name: ${formInfo.name}</h3></li>
         <li><h3>Email: ${formInfo.email}</h3></li>
-        <li><a href="tel:+1-206-353-9012"><h5>${formInfo.phone_number}</h5></a></li>
+        <li><a href=${tel_href}><h3>${formInfo.phone_number}</h3></a></li>
         <li><h3>Date and Time: ${formInfo.date}</h3></li>
         <li><h3>Message:${formInfo.message} </h3></li>
         <li><h3>Best Time: ${formInfo.time} </h3></li>
