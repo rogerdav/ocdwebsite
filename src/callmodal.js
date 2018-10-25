@@ -29,17 +29,12 @@ class ModalCall extends React.Component {
   }
   
   submitCallRequest() {
-    sendEmail(this.state)
-    .then(res => {
-      console.log(res.data);
-      this.toggle();
-        })
-       
-       
-       this.setState({ submitted: !this.state.submitted}); 
-       
+   
+    sendEmail(this.state);
+    
   }
   resetState() {
+     
     this.setState({
       date: '',
       name: '',
@@ -47,7 +42,7 @@ class ModalCall extends React.Component {
       email: '',
       time: '',
       message: '',
-      submitted: false,
+      submitted: true,
       subject: 'Call Request',
       zip_code: '',
     })
