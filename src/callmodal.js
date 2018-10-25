@@ -15,11 +15,13 @@ class ModalCall extends React.Component {
       message: '',
       submitted: false,
       subject: 'Call Request',
+      zip_code: '',
     };
 
     this.handleInputChange = this.handleInputChange.bind(this);
     this.toggle = this.toggle.bind(this);
     this.submitCallRequest = this.submitCallRequest.bind(this);
+    this.resetState = this.resetState.bind
   }
 
   toggle() {
@@ -28,10 +30,24 @@ class ModalCall extends React.Component {
   
   submitCallRequest() {
        this.toggle();
-       sendEmail(this.state); 
-       this.setState({ submitted: !this.state.submitted});  
+       let answer = sendEmail(this.state); 
+       console.log("answer", answer)
+       this.setState({ submitted: !this.state.submitted}); 
+        
   }
-
+  resetState() {
+    this.setState({
+      date: '',
+      name: '',
+      phone_number: '',
+      email: '',
+      time: '',
+      message: '',
+      submitted: false,
+      subject: 'Call Request',
+      zip_code: '',
+    })
+  }
   handleInputChange(e) {
     this.setState({[e.target.name]: e.target.value});
     
@@ -56,6 +72,15 @@ class ModalCall extends React.Component {
                       name="phone_number" 
                       id="phone_number" 
                       placeholder="123-456-7890" onChange={this.handleInputChange} />
+              <p className="invalidstatement">That is an invalid format</p>
+            </FormGroup>
+            <FormGroup>
+              <Label for="zip_code">Zip zip_code</Label>
+              <Input type="tel" 
+                      pattern="[0-9]{5}" 
+                      name="zip_code" 
+                      id="zip_code" 
+                      placeholder="98126" onChange={this.handleInputChange} />
               <p className="invalidstatement">That is an invalid format</p>
             </FormGroup>
             <FormGroup>

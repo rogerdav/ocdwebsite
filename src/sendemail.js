@@ -9,7 +9,7 @@ module.exports = function(formInfo) {
   // console.log('formInfo at top of send email', formInfo.resume)
 
 // This address must be verified with Amazon SES.
-  const sender = 'Sender Name <roger@davenport-home.com>';
+  const sender = 'OCD Website <roger@davenport-home.com>';
   const recipient = 'roger@roger-davenport.com';
   // let dayForSubject = formInfo.date.getDay();
   const subject = `${formInfo.subject} from ${formInfo.name}`;
@@ -56,6 +56,7 @@ module.exports = function(formInfo) {
         <li><h3>Date and Time: ${formInfo.date}</h3></li>
         <li><h3>Message:${formInfo.message} </h3></li>
         <li><h3>Best Time: ${formInfo.time} </h3></li>
+        <li><h3>Zip Code: ${formInfo.zip_code} </h3></li>
         <li><h3>--------------------------------------</h3></li>
      </ul>
       
@@ -106,11 +107,13 @@ module.exports = function(formInfo) {
     
     if(err) {
       console.log(err.message);
+      return "not sent";
     } else {
       console.log('Email sent! Message ID: ', data.MessageId);
+      return "sent";
     }
   });
-
+  
 
 
 }
