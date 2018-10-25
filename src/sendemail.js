@@ -102,18 +102,19 @@ module.exports = function(formInfo) {
   };
   
   //Try to send the email.
-  ses.sendEmail(params, function(err, data) {
+   return ses.sendEmail(params, function(err, data) {
     // If something goes wrong, print an error message.
     
     if(err) {
       console.log(err.message);
-      return "not sent";
+      
     } else {
       console.log('Email sent! Message ID: ', data.MessageId);
-      return "sent";
+      
     }
   });
+   
   
-
+ 
 
 }

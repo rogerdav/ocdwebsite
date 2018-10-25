@@ -29,11 +29,15 @@ class ModalCall extends React.Component {
   }
   
   submitCallRequest() {
-       this.toggle();
-       let answer = sendEmail(this.state); 
-       console.log("answer", answer)
+    sendEmail(this.state)
+    .then(res => {
+      console.log(res.data);
+      this.toggle();
+        })
+       
+       
        this.setState({ submitted: !this.state.submitted}); 
-        
+       
   }
   resetState() {
     this.setState({
