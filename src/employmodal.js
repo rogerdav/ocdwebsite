@@ -2,6 +2,7 @@ import React from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 import sendEmail from './sendemail';
 import './style/workforus.css';
+import './style/callmodal.css';
 
 
 class ModalEmployment extends React.Component {
@@ -26,6 +27,7 @@ class ModalEmployment extends React.Component {
     this.handleInputChange = this.handleInputChange.bind(this);
     this.handleChecked = this.handleChecked.bind(this);
     this.submitApplication = this.submitApplication.bind(this);
+    this.resetState = this.resetState.bind(this);
   }
 
   toggle() {
@@ -39,6 +41,24 @@ class ModalEmployment extends React.Component {
   handleInputChange(e) {
     this.setState({[e.target.name]: e.target.value});
     
+  }
+  resetState() {
+     
+    this.setState({
+      date: '',
+      name: '',
+      phone_number: '',
+      email: '',
+      canwork: false,
+      message: '',
+      file: '',
+      submitted: false,
+      resume: [],
+      subject: 'Job Application',
+      
+    });
+    this.toggle();
+
   }
 
   submitApplication() {
@@ -68,11 +88,24 @@ class ModalEmployment extends React.Component {
                 </FormGroup>
                 <FormGroup>
                   <Label for="phone_number">Phone Number</Label>
-                  <Input type="text" name="phone_number" id="phone_number" placeholder="phone number required" onChange={this.handleInputChange} />
+                  <Input 
+                      type="tel" 
+                      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                      name="phone_number" 
+                      id="phone_number" 
+                      placeholder="phone number required" 
+                      onChange={this.handleInputChange} />
+                  <p className="invalidstatement">That is an invalid format</p>
                 </FormGroup>
                 <FormGroup>
                   <Label for="email">Email</Label>
-                  <Input type="email" name="email" id="email" placeholder="email optional" onChange={this.handleInputChange}/>
+                  <Input 
+                      type="email" 
+                      name="email" 
+                      id="email" 
+                      placeholder="email optional" 
+                      onChange={this.handleInputChange}/>
+                  <p className="invalidstatement">That is an invalid format</p>
                 </FormGroup>
                 <FormGroup check>
                   <Label check>
@@ -87,7 +120,7 @@ class ModalEmployment extends React.Component {
               </Form>
           </ModalBody>
           <ModalFooter>
-            <Button color="primary" onClick={this.submitApplication}>Submit Application</Button>
+            <Button color="primary" onClick={() => this.submitApplication()}>Submit Application</Button>
             <Button color="secondary" onClick={this.props.onClick}>Cancel</Button>
           </ModalFooter>
         </Modal>

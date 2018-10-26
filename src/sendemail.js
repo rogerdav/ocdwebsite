@@ -9,41 +9,63 @@ module.exports = function(formInfo) {
   // console.log('formInfo at top of send email', formInfo.resume)
 
 // This address must be verified with Amazon SES.
-  const sender = 'Sender Name <roger.neil.davenport@gmail.com>';
+  const sender = 'OCD Website <roger@davenport-home.com>';
   const recipient = 'roger@roger-davenport.com';
   // let dayForSubject = formInfo.date.getDay();
   const subject = `${formInfo.subject} from ${formInfo.name}`;
 
   // The email body for recipients with non-HTML email clients.
   const body_text = `${formInfo.subject}`;
-  let body_resume;
+  let body_resume, body_html;
   if (formInfo.subject === 'Job Application') {
     body_resume = `<p>Resume from ${formInfo.name}</p>`;
     body_resume = formInfo.resume.map( item => `<p>${item}</p>`).join("");
-  }
-  if (formInfo.subject === 'Request For Estimate') {
-    body_resume = ``;
+    body_html = 
+    `<html>
+     <head></head>
+     <body>
+     <h1>${formInfo.subject}</h1>
+     <ul>
+        <li>Name: ${formInfo.name}</li>
+        <li>Email: ${formInfo.email}</li>
+        <li>Phone: ${formInfo.phone_number}</li>
+        <li>Eligible to work: ${formInfo.canwork}</li>
+        <li>Date and Time: ${formInfo.date}</li>
+        <li>Message:${formInfo.message} </li>
+        <li>Best Time: ${formInfo.time} </li>
+        <li>--------------------------------------</li>
+        <li><h3>Resume<h3></li>
+      </ul>
+      ${body_resume}
+      </body>
+      </html>`;
+
+    };
+
+  if (formInfo.subject === 'Call Request') {
+    let tel_href = `tel:+1-${formInfo.phone_number}`
+    body_html = 
+    `<html>
+     <head></head>
+     <body>
+     <h1>${formInfo.subject}</h1>
+     <ul>
+        <li><h3>Name: ${formInfo.name}</h3></li>
+        <li><h3>Email: ${formInfo.email}</h3></li>
+        <li><a href=${tel_href}><h3>${formInfo.phone_number}</h3></a></li>
+        <li><h3>Date and Time: ${formInfo.date}</h3></li>
+        <li><h3>Message:${formInfo.message} </h3></li>
+        <li><h3>Best Time: ${formInfo.time} </h3></li>
+        <li><h3>Zip Code: ${formInfo.zip_code} </h3></li>
+        <li><h3>--------------------------------------</h3></li>
+     </ul>
+      
+      </body>
+      </html>`;
   }
   
   
-    const body_html = `<html>
-<head></head>
-<body>
-  <h1>${formInfo.subject}</h1>
-  <ul>
-    <li>Name: ${formInfo.name}</li>
-    <li>Email: ${formInfo.email}</li>
-    <li>Phone: ${formInfo.phone_number}</li>
-    <li>Eligible to work: ${formInfo.canwork}</li>
-    <li>Date and Time: ${formInfo.date}</li>
-    <li>Message:${formInfo.message} </li>
-    <li>--------------------------------------</li>
-    <li><h3>Resume<h3></li>
-    </ul>
-    ${body_resume}
-</body>
-</html>`;
-// console.log('html body', body_html);
+
 
   // The character encoding for the email.
   const charset = 'UTF-8';
@@ -80,16 +102,19 @@ module.exports = function(formInfo) {
   };
   
   //Try to send the email.
-  ses.sendEmail(params, function(err, data) {
+   ses.sendEmail(params, function(err, data) {
     // If something goes wrong, print an error message.
     
     if(err) {
       console.log(err.message);
+      
     } else {
-      console.log('Email sent! Message ID: ', data.MessageId);
+      console.log('Email sent! Message ID: ', data);
+      
     }
   });
-
-
+   
+  
+ 
 
 }

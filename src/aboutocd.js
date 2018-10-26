@@ -6,7 +6,7 @@ class AboutOcd extends Component {
     return (
       <div className="aboutInfo">
         <p className="contentheading">
-          <span className="green">OCD Crew</span>
+          OCD Crew
         </p>
         <p>
         We are a full service cleaning company built for the now, we partner with our clients to help them in their busy lives to ensure they have the time for what matters most to them.</p>

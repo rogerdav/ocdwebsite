@@ -1,6 +1,6 @@
 .review {
   max-height: 500px;
-  padding: 20px;
+  padding:  0px 0px;
   /* border: solid 2px #82ad40; */
   overflow-y: scroll;
 }
