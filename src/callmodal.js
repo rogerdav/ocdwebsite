@@ -21,7 +21,8 @@ class ModalCall extends React.Component {
     this.handleInputChange = this.handleInputChange.bind(this);
     this.toggle = this.toggle.bind(this);
     this.submitCallRequest = this.submitCallRequest.bind(this);
-    this.resetState = this.resetState.bind
+    this.resetState = this.resetState.bind(this);
+    // this.callback = this.callback.bind(this);
   }
 
   toggle() {
@@ -100,7 +101,7 @@ class ModalCall extends React.Component {
           </Form>
           </ModalBody>
           <ModalFooter>
-            <Button className="submitbutton"color="primary" onClick={this.submitCallRequest(this.resetState)}>Submit Request</Button>
+            <Button className="submitbutton"color="primary" onClick={() => this.submitCallRequest(this.resetState)}>Submit Request</Button>
             <Button color="secondary" onClick={this.props.onClick}>Cancel</Button>
           </ModalFooter>
         </Modal>
