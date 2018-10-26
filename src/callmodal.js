@@ -28,10 +28,10 @@ class ModalCall extends React.Component {
     this.props.onClick();
   }
   
-  submitCallRequest() {
+  submitCallRequest(callback) {
    
     sendEmail(this.state);
-    
+    callback();
   }
   resetState() {
      
@@ -45,7 +45,9 @@ class ModalCall extends React.Component {
       submitted: true,
       subject: 'Call Request',
       zip_code: '',
-    })
+    });
+    this.toggle();
+
   }
   handleInputChange(e) {
     this.setState({[e.target.name]: e.target.value});
@@ -98,7 +100,7 @@ class ModalCall extends React.Component {
           </Form>
           </ModalBody>
           <ModalFooter>
-            <Button className="submitbutton"color="primary" onClick={this.submitCallRequest}>Submit Request</Button>
+            <Button className="submitbutton"color="primary" onClick={this.submitCallRequest(this.resetState)}>Submit Request</Button>
             <Button color="secondary" onClick={this.props.onClick}>Cancel</Button>
           </ModalFooter>
         </Modal>
