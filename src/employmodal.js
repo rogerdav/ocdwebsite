@@ -61,19 +61,24 @@ class ModalEmployment extends React.Component {
 
   }
 
-  submitApplication() {
-    let fileArray = this.state.message.split('\n');
-    this.setState(prevState => ({
-      resume : fileArray,
-      message: '',
-     }), function() {
-       this.toggle();
-       sendEmail(this.state);
+  // submitApplication() {
+  //   let fileArray = this.state.message.split('\n');
+  //   this.setState(prevState => ({
+  //     resume : fileArray,
+  //     message: '',
+  //    }), function() {
+  //      this.toggle();
+  //      sendEmail(this.state);
       
-     })
+  //    })
    
-  }
+  // }
 
+  submitApplication(callback) {
+   
+    sendEmail(this.state);
+    callback();
+  }
   render() {
     return (
       <div>
@@ -120,7 +125,7 @@ class ModalEmployment extends React.Component {
               </Form>
           </ModalBody>
           <ModalFooter>
-            <Button color="primary" onClick={() => this.submitApplication()}>Submit Application</Button>
+            <Button color="primary" onClick={() => this.submitApplication(this.resetState)}>Submit Application</Button>
             <Button color="secondary" onClick={this.props.onClick}>Cancel</Button>
           </ModalFooter>
         </Modal>

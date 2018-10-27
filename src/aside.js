@@ -54,7 +54,7 @@ class ContactAside extends Component {
         </Row>
         {/* --------------------------------------------- */}
         <Row className="contactheading">
-          <Col className="col-sm-12">
+          <Col>
             <img className="icon mobile" src="https://png.icons8.com/ios/30/000000/clock.png" alt="" />
             <img className="icon full" src="https://png.icons8.com/ios/30/ffffff/clock.png" alt="" />
             <h5>When We Work</h5>
@@ -64,26 +64,26 @@ class ContactAside extends Component {
         </Row>
         <Row>
             {/* <Col sm={{ size: 'auto', offset: 2 }}> */}
-            <Col className="col-6">
+            <Col>
               <h6>Mon - Fri</h6>
             </Col>
-            <Col className="col-6">
+            <Col >
               <h6>9am - 4:30pm</h6>
             </Col>
         </Row>
         <Row>
             {/* <Col sm={{ size: 'auto', offset: 2 }}> */}
-            <Col className="col-6">
+            <Col >
               <h6>Sat - Sun</h6>
             </Col>
-            <Col className="col-6">
+            <Col >
               <h6>By Request Only</h6>
             </Col>
         </Row>
         
         {/* ----------------------------------------------- */}
         <Row className="contactheading">
-          <Col className="col-sm-12">
+          <Col className="col-12">
           <img className="icon mobile" src="https://png.icons8.com/ios/30/000000/marker.png" alt="" />
           <img className="icon full" src="https://png.icons8.com/ios/30/ffffff/marker.png" alt="" />
           <h5>Where We Work</h5>
@@ -93,42 +93,42 @@ class ContactAside extends Component {
           </Col> */}
         </Row>
         <Row>
-          <Col sm={{ size: 'auto', offset: 1 }}>
+          <Col>
             <h6>
               West Seattle
             </h6>
           </Col>
         </Row>
         <Row>
-          <Col sm={{ size: 'auto', offset: 1 }}>
+          <Col>
             <h6>
               Downtown Core
             </h6>
           </Col>
         </Row>
         <Row>
-          <Col sm={{ size: 'auto', offset: 1 }}>
+          <Col>
             <h6>
               Magnolia
             </h6>
           </Col>
         </Row>
         <Row>
-          <Col sm={{ size: 'auto', offset: 1 }}>
+          <Col>
             <h6>
               Queen Anne
             </h6>
           </Col>
         </Row>
         <Row>
-          <Col sm={{ size: 'auto', offset: 1 }}>
+          <Col>
             <h6>
              Burien
             </h6>
           </Col>
         </Row>
         <Row>
-          <Col sm={{ size: 'auto', offset: 1 }}>
+          <Col>
             <h6>
               Renton
             </h6>

@@ -30,6 +30,10 @@ a:link {
   #root {
     background-image: url('');
   }
+  .row {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
   .container {
     padding-left: 0;
     padding-right: 0;
@@ -56,6 +60,22 @@ a:link {
   .mobile {
     display: none;
   }
+  #content {
+    animation-duration: 2s;
+    animation-name: slidein_right;
+  }
+  
+  @keyframes slidein_right {
+    from {
+      margin-right: -100%;
+      width: 200%; 
+    }
+  
+    to {
+      margin-right: 0%;
+      width: 100%;
+    }
+  }
 }
 
 
@@ -65,22 +85,6 @@ a:link {
   
 }
 
-#content {
-  animation-duration: 2s;
-  animation-name: slidein_right;
-}
-
-@keyframes slidein_right {
-  from {
-    margin-right: -100%;
-    width: 200%; 
-  }
-
-  to {
-    margin-right: 0%;
-    width: 100%;
-  }
-}
 .contentheading  {
   font-weight: bold;
   font-size: 2em;
