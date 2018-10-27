@@ -7,6 +7,8 @@
   background-color: #82ad40;
   border-color: #82ad40;
   font-size: 1.5em;
+  opacity: 1;
+  z-index: 999999999;
 }
 .upload {
   margin-top: 3%;

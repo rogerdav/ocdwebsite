@@ -30,19 +30,39 @@ a:link {
   #root {
     background-image: url('');
   }
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .pagefooter {
+    display: none;
+  }
+  .full {
+    display: none;
+  }
+  .mobilePhoneHeading {
+    background-color: #82ad40;
+    margin-top: -2%;
+  }
 }
  
 @media screen and (min-width: 961px) {
   #all {
       flex-direction: row;
   }
+  .mobilePhoneHeading {
+    display: none;
+  }
+  .mobile {
+    display: none;
+  }
 }
 
 
 #content {
-  background-color: lightgray;
+  background-color: rgba(218, 215, 215, 0.8 );
   padding: 3% 8%;
-  opacity: 0.8;
+  
 }
 
 #content {

@@ -45,22 +45,22 @@ class NavHeader extends Component {
           <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="mr-auto" navbar>
                   <NavItem>
-                      <NavLink to="/">Home</NavLink>
+                      <NavLink to="/" onClick={this.toggle}>Home</NavLink>
                   </NavItem>
                   <NavItem>
-                      <NavLink to="/about">About</NavLink>
+                      <NavLink to="/about" onClick={this.toggle}>About</NavLink>
                   </NavItem>
                   <NavItem>
-                      <NavLink to="/reviews">What Clients Say</NavLink>
+                      <NavLink to="/reviews" onClick={this.toggle}>What Clients Say</NavLink>
                   </NavItem>
                   <NavItem>
-                      <NavLink to="/services">Services</NavLink>
+                      <NavLink to="/services" onClick={this.toggle}>Services</NavLink>
                   </NavItem>
                   <NavItem>
-                      <NavLink to="/giftcard">Gift Certificates</NavLink>
+                      <NavLink to="/giftcard" onClick={this.toggle}>Gift Certificates</NavLink>
                   </NavItem>
                   <NavItem>
-                      <NavLink to="/employment">Work for Us</NavLink>
+                      <NavLink to="/employment" onClick={this.toggle}>Work for Us</NavLink>
                   </NavItem>
               </Nav>
           </Collapse>
