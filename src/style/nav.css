@@ -49,10 +49,13 @@ a {
   font-size: 2.5em;
  }
 
- @media screen and (min-width: 300px) {
+ @media screen and (max-width: 960px) {
   #logo h1 {
     color: #82ad40;
-    font-size: 3em;
+    font-size: 3.5em;
+  }
+  #logo h5 {
+    font-size: 0.8em;
   }
 
  }

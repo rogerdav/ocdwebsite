@@ -23,7 +23,8 @@ class ContactAside extends Component {
       <ModalCall modal={this.state.modalAside} onClick={this.openModal}/>
         <Row>
           <Col>
-          <img className="icon" src="https://png.icons8.com/windows/60/82ad40/contacts.png" alt=""/>
+          <img className="icon full" src="https://png.icons8.com/windows/60/ffffff/contacts.png" alt=""/>
+          <img className="icon mobile" src="https://png.icons8.com/windows/60/000000/contacts.png" alt=""/>
           </Col>
         </Row>
 
@@ -36,7 +37,8 @@ class ContactAside extends Component {
         <Row>
           <Col>
           <a href="mailto:davenport.mandy@gmail.com" >
-          <img className="icon" src="https://png.icons8.com/ios/40/82ad40/email-filled.png" alt="" />
+          <img className="icon full" src="https://png.icons8.com/ios/40/ffffff/email-filled.png" alt="" />
+          <img className="icon mobile" src="https://png.icons8.com/ios/40/000000/email-filled.png" alt="" />
           </a>
           </Col>
         </Row>
@@ -53,7 +55,8 @@ class ContactAside extends Component {
         {/* --------------------------------------------- */}
         <Row className="contactheading">
           <Col className="col-sm-12">
-            <img src="https://png.icons8.com/ios/30/000000/clock.png" alt="" />
+            <img className="icon mobile" src="https://png.icons8.com/ios/30/000000/clock.png" alt="" />
+            <img className="icon full" src="https://png.icons8.com/ios/30/ffffff/clock.png" alt="" />
             <h5>When We Work</h5>
           </Col>
           {/* <Col className="col-sm-10">
@@ -81,7 +84,8 @@ class ContactAside extends Component {
         {/* ----------------------------------------------- */}
         <Row className="contactheading">
           <Col className="col-sm-12">
-          <img src="https://png.icons8.com/ios/30/000000/marker.png" alt="" />
+          <img className="icon mobile" src="https://png.icons8.com/ios/30/000000/marker.png" alt="" />
+          <img className="icon full" src="https://png.icons8.com/ios/30/ffffff/marker.png" alt="" />
           <h5>Where We Work</h5>
 
           </Col>
