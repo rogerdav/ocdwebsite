@@ -9,6 +9,8 @@ module.exports = function(formInfo) {
   // console.log('formInfo at top of send email', formInfo.resume)
 
 // This address must be verified with Amazon SES.
+  let fileArray = formInfo.message.split('\n');
+  
   const sender = 'OCD Website <roger@davenport-home.com>';
   const recipient = 'roger@roger-davenport.com';
   // let dayForSubject = formInfo.date.getDay();
@@ -19,7 +21,7 @@ module.exports = function(formInfo) {
   let body_resume, body_html;
   if (formInfo.subject === 'Job Application') {
     body_resume = `<p>Resume from ${formInfo.name}</p>`;
-    body_resume = formInfo.resume.map( item => `<p>${item}</p>`).join("");
+    body_resume = fileArray.map( item => `<p>${item}</p>`).join("");
     body_html = 
     `<html>
      <head></head>
@@ -31,7 +33,7 @@ module.exports = function(formInfo) {
         <li>Phone: ${formInfo.phone_number}</li>
         <li>Eligible to work: ${formInfo.canwork}</li>
         <li>Date and Time: ${formInfo.date}</li>
-        <li>Message:${formInfo.message} </li>
+        
         <li>Best Time: ${formInfo.time} </li>
         <li>--------------------------------------</li>
         <li><h3>Resume<h3></li>
