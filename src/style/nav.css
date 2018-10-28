@@ -39,17 +39,25 @@ a {
 }
 
 
-#fixednavbar {
-  margin-bottom: 10px;
-  background-color: black;
-  color: white;
-  border-bottom: #82ad40 solid 10px;
+@media screen and (min-width: 1025px) {
+  #fixednavbar {
+    margin-bottom: 10px;
+    background-color: black;
+    color: white;
+    border-bottom: #82ad40 solid 10px;
+  }
 }
 #phone {
   font-size: 2.5em;
- }
+}
 
- @media screen and (max-width: 960px) {
+@media screen and (max-width: 1024px) {
+  #fixednavbar {
+    /* margin-bottom: 10px; */
+    background-color: black;
+    color: white;
+    border-bottom: #82ad40 solid 10px;
+  }
   #logo h1 {
     color: #82ad40;
     font-size: 3.5em;

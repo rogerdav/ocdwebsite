@@ -21,15 +21,14 @@ a:link {
   background-position-y: -5%;
  }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1024px) {
   #all {
       flex-direction: column-reverse;
-      /* margin-top: 55%; */
-
   }
   #root {
     background-image: url('');
   }
+  
   .row {
     margin-left: 0px;
     margin-right: 0px;
@@ -37,6 +36,7 @@ a:link {
   .container {
     padding-left: 0;
     padding-right: 0;
+    
   }
   .pagefooter {
     display: none;
@@ -46,11 +46,12 @@ a:link {
   }
   .mobilePhoneHeading {
     background-color: #82ad40;
-    margin-top: -2%;
+    margin-top: 0%;
+    padding-top: 5%;
   }
 }
  
-@media screen and (min-width: 961px) {
+@media screen and (min-width: 1025px) {
   #all {
       flex-direction: row;
   }
