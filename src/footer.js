@@ -1,5 +1,4 @@
 import React, { Component} from 'react';
-import {Jumbotron} from 'react-bootstrap';
 import './style/footer.css';
 
 class PageFooter extends Component {
@@ -7,7 +6,7 @@ class PageFooter extends Component {
   render() {
     return (
       <div className="pagefooter" >
-          <h1>(206) 353-9012</h1>
+          <p>(206) 353-9012</p>
           <p>
             Call today for a free estimate!
           </p>

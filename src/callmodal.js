@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Form, FormGroup, Label, Input, FormText, FormFeedback } from 'reactstrap';
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Form, FormGroup, Label, Input } from 'reactstrap';
 import sendEmail from './sendemail';
 import './style/callmodal.css';
 
@@ -22,7 +22,7 @@ class ModalCall extends React.Component {
     this.toggle = this.toggle.bind(this);
     this.submitCallRequest = this.submitCallRequest.bind(this);
     this.resetState = this.resetState.bind(this);
-    // this.callback = this.callback.bind(this);
+    
   }
 
   toggle() {
@@ -102,7 +102,7 @@ class ModalCall extends React.Component {
           </ModalBody>
           <ModalFooter>
             <Button className="submitbutton"color="primary" onClick={() => this.submitCallRequest(this.resetState)}>Submit Request</Button>
-            <Button color="secondary" onClick={this.props.onClick}>Cancel</Button>
+            <Button color="secondary" onClick={this.resetState}>Cancel</Button>
           </ModalFooter>
         </Modal>
       </div>

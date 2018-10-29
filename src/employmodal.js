@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Form, FormGroup, Label, Input } from 'reactstrap';
 import sendEmail from './sendemail';
 import './style/workforus.css';
 import './style/callmodal.css';
@@ -53,26 +53,12 @@ class ModalEmployment extends React.Component {
       message: '',
       file: '',
       submitted: false,
-      resume: [],
       subject: 'Job Application',
       
     });
     this.toggle();
 
   }
-
-  // submitApplication() {
-  //   let fileArray = this.state.message.split('\n');
-  //   this.setState(prevState => ({
-  //     resume : fileArray,
-  //     message: '',
-  //    }), function() {
-  //      this.toggle();
-  //      sendEmail(this.state);
-      
-  //    })
-   
-  // }
 
   submitApplication(callback) {
    
@@ -126,7 +112,7 @@ class ModalEmployment extends React.Component {
           </ModalBody>
           <ModalFooter>
             <Button color="primary" onClick={() => this.submitApplication(this.resetState)}>Submit Application</Button>
-            <Button color="secondary" onClick={this.props.onClick}>Cancel</Button>
+            <Button color="secondary" onClick={this.resetState}>Cancel</Button>
           </ModalFooter>
         </Modal>
       </div>
