@@ -75,7 +75,12 @@ class ModalEmployment extends React.Component {
               <Form>
                 <FormGroup>
                   <Label for="name">Name</Label>
-                  <Input type="text" name="name" id="name" placeholder="name required" onChange={this.handleInputChange} />
+                  <Input 
+                    type="text" 
+                    name="name" 
+                    id="name" 
+                    placeholder="name required" 
+                    onChange={this.handleInputChange} />
                 </FormGroup>
                 <FormGroup>
                   <Label for="phone_number">Phone Number</Label>
@@ -86,7 +91,7 @@ class ModalEmployment extends React.Component {
                       id="phone_number" 
                       placeholder="phone number required" 
                       onChange={this.handleInputChange} />
-                  <p className="invalidstatement">That is an invalid format</p>
+                    <p className="invalidstatement">That is an invalid format</p>
                 </FormGroup>
                 <FormGroup>
                   <Label for="email">Email</Label>
@@ -96,22 +101,32 @@ class ModalEmployment extends React.Component {
                       id="email" 
                       placeholder="email optional" 
                       onChange={this.handleInputChange}/>
-                  <p className="invalidstatement">That is an invalid format</p>
+                    <p className="invalidstatement">That is an invalid format</p>
                 </FormGroup>
                 <FormGroup check>
                   <Label check>
-                    <Input type="checkbox" id="canwork" onClick={this.handleChecked} />
-                      Are you eligible to work in US?
+                    <Input 
+                      type="checkbox" 
+                      id="canwork" 
+                      onClick={this.handleChecked} />
+                        Are you eligible to work in US?
                   </Label>
                 </FormGroup>
                 <FormGroup className="upload">
                   <Label for="message">Copy and Paste resume below / Tell us about your work history</Label>
-                  <Input type="textarea" name="message" id="message" placeholder="Any additional info" onChange={this.handleInputChange} />
+                  <Input 
+                    type="textarea" 
+                    name="message" 
+                    id="message" 
+                    placeholder="Any additional info" 
+                    onChange={this.handleInputChange} />
                 </FormGroup>
               </Form>
           </ModalBody>
           <ModalFooter>
-            <Button color="primary" onClick={() => this.submitApplication(this.resetState)}>Submit Application</Button>
+            <Button 
+              color="primary" 
+              onClick={() => this.submitApplication(this.resetState)}>Submit Application</Button>
             <Button color="secondary" onClick={this.resetState}>Cancel</Button>
           </ModalFooter>
         </Modal>

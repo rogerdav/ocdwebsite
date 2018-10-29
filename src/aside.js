@@ -30,21 +30,20 @@ class ContactAside extends Component {
 
         <Row>
           <Col>
-          <a href="tel:+1-206-353-9012"><h5>(206) 353-9012</h5></a>
-            
+            <a href="tel:+1-206-353-9012"><h5>(206) 353-9012</h5></a>
           </Col>
         </Row>
         <Row>
           <Col>
-          <a href="mailto:davenport.mandy@gmail.com" >
-          <img className="icon full" src="https://png.icons8.com/ios/40/ffffff/email-filled.png" alt="" />
-          <img className="icon mobile" src="https://png.icons8.com/ios/40/000000/email-filled.png" alt="" />
-          </a>
+            <a href="mailto:davenport.mandy@gmail.com" >
+            <img className="icon full" src="https://png.icons8.com/ios/40/ffffff/email-filled.png" alt="" />
+            <img className="icon mobile" src="https://png.icons8.com/ios/40/000000/email-filled.png" alt="" />
+            </a>
           </Col>
         </Row>
         <Row>
           <Col>
-          <h5>davenport.mandy@gmail.com</h5>
+            <h5>davenport.mandy@gmail.com</h5>
           </Col>
         </Row>
         <Row>
@@ -59,11 +58,9 @@ class ContactAside extends Component {
             <img className="icon full" src="https://png.icons8.com/ios/30/ffffff/clock.png" alt="" />
             <h5>When We Work</h5>
           </Col>
-          {/* <Col className="col-sm-10">
-          </Col> */}
+          
         </Row>
         <Row>
-            {/* <Col sm={{ size: 'auto', offset: 2 }}> */}
             <Col>
               <h6>Mon - Fri</h6>
             </Col>
@@ -72,7 +69,6 @@ class ContactAside extends Component {
             </Col>
         </Row>
         <Row>
-            {/* <Col sm={{ size: 'auto', offset: 2 }}> */}
             <Col >
               <h6>Sat - Sun</h6>
             </Col>
@@ -84,13 +80,11 @@ class ContactAside extends Component {
         {/* ----------------------------------------------- */}
         <Row className="contactheading">
           <Col className="col-12">
-          <img className="icon mobile" src="https://png.icons8.com/ios/30/000000/marker.png" alt="" />
-          <img className="icon full" src="https://png.icons8.com/ios/30/ffffff/marker.png" alt="" />
-          <h5>Where We Work</h5>
-
+            <img className="icon mobile" src="https://png.icons8.com/ios/30/000000/marker.png" alt="" />
+            <img className="icon full" src="https://png.icons8.com/ios/30/ffffff/marker.png" alt="" />
+            <h5>Where We Work</h5>
           </Col>
-          {/* <Col className="col-sm-6 mr-3">
-          </Col> */}
+          
         </Row>
         <Row>
           <Col>
@@ -102,7 +96,7 @@ class ContactAside extends Component {
         <Row>
           <Col>
             <h6>
-              Downtown Core
+              Downtown Seattle
             </h6>
           </Col>
         </Row>

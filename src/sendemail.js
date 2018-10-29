@@ -1,7 +1,7 @@
 var aws = require('aws-sdk');
 
 //this is the aws config with the keys from .env
-aws.config = ({ "accessKeyId": process.env.REACT_APP_AWS_KEY_ID, "secretAccessKey": process.env.REACT_APP_SECRET_KEY, "region": "us-west-2" })
+aws.config = ({ "accessKeyId": process.env.REACT_APP_AWS_KEY_ID, "secretAccessKey": process.env.REACT_APP_SECRET_KEY, "region": process.env.REACT_APP_REGION })
 
 
 // this function send the informatin from the form to email reciepient

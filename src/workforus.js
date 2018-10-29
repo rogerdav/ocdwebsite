@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Row, Col, Button} from 'reactstrap';
+import { Button} from 'reactstrap';
 import './style/workforus.css';
 import ModalEmployment from './employmodal';
 
@@ -26,7 +26,7 @@ class Employment extends Component {
         <ModalEmployment modal={this.state.modalEmploy} onClick={this.openModal}/>
         <p className="contentheading">Work for us</p>
         <p>
-        We are a full service cleaning company built for the now, we partner with our clients to help them in their busy lives to ensure they have the time for what matters most to them.
+        We are a full service cleaning company built for the now. We partner with our clients to help them in their busy lives to ensure they have the time for what matters most to them.
         </p>
         
         <p>

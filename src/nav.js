@@ -7,15 +7,8 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
- 
-  Container,
-  Row,
-  Col,
-  Jumbotron,
-  Button
 } from 'reactstrap';
 import {
-  Route,
   NavLink,
   HashRouter
 } from "react-router-dom";
