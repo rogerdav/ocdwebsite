@@ -9,7 +9,7 @@ class AboutOcd extends Component {
           OCD Crew
         </p>
         <p>
-        We are a full service cleaning company built for the now, we partner with our clients to help them in their busy lives to ensure they have the time for what matters most to them.</p>
+        We are a full service cleaning company built for the now. We partner with our clients to help them in their busy lives to ensure they have the time for what matters most to them.</p>
         <p>
         All our services are customizable to accommodate our clients needs, whether cleaning, organizing or both.
         We pride ourselves on offering, personalized, professional work time after time.
@@ -17,7 +17,7 @@ class AboutOcd extends Component {
         <p>
         Unlike many other companies we do not make you clean up before we visit.<br /> 
         We are pet friendly.<br />
-        We listen to your needs and work with your budget<br />
+        We listen to your needs and work with your budget.<br />
         We provide all cleaning supplies.<br />
         Free estimates and in home consultations.<br />
         We take great pride in providing you with services that exceed your expectations.<br />

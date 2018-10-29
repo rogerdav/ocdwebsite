@@ -12,7 +12,7 @@ class AboutMandy extends Component {
         <img src={require('./pics/mandy.jpg')} alt="Mandy Davenport" ></img>
        
         <p>
-        After the birth of my son I realized that I didn't want to go back to working in a outside sales position that required traveling, and being away for days or weeks at a time.
+        After the birth of my child I realized that I didn't want to go back to working in an outside sales position that required traveling, and being away for days or weeks at a time.
         </p>
         <p>
         A good friend suggested that I start a cleaning business. 
@@ -26,10 +26,10 @@ class AboutMandy extends Component {
         </p>
         <p>
         Whether it's getting a bed and breakfast ready for a guests.<br />
-        Helping to organize a space<br />
+        Helping to organize a space.<br />
         Doing a move in or move out clean so that the new owner or tenant has a ready to move in home.<br />
-        Cleaning a office space so that people can walk in and start the day in a organized and clean work space.<br />
-        Or organizing an area that has been bothering a client<br />
+        Cleaning an office space so that people can walk in and start the day in an organized and clean work space.<br />
+        Or organizing an area that has been bothering a client.<br />
         If it requires, cleaning or organizing in anyway, OCD Crew is the company for you.<br />
         </p>
         
