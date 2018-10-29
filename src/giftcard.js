@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Container, Row, Col} from 'reactstrap';
 import './style/giftcard.css';
  
 class GiftCard extends Component {

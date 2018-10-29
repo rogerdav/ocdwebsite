@@ -65,7 +65,12 @@ class ModalCall extends React.Component {
           <Form>
             <FormGroup>
               <Label for="name">Name</Label>
-              <Input type="text" name="name" id="name" placeholder="name required" onChange={this.handleInputChange}/>
+              <Input 
+                type="text" 
+                name="name" 
+                id="name" 
+                placeholder="name required" 
+                onChange={this.handleInputChange}/>
             </FormGroup>
             <FormGroup>
               <Label for="phone_number">Phone Number</Label>
@@ -87,21 +92,39 @@ class ModalCall extends React.Component {
             </FormGroup>
             <FormGroup>
               <Label for="email">Email</Label>
-              <Input type="email" name="email" id="email" placeholder="email optional" onChange={this.handleInputChange}/>
-              <p className="invalidstatement">That is an invalid format</p>
+              <Input 
+                type="email" 
+                name="email" 
+                id="email" 
+                placeholder="email optional" 
+                onChange={this.handleInputChange}/>
+                <p className="invalidstatement">That is an invalid format</p>
             </FormGroup>
             <FormGroup>
               <Label for="time">Best Time To Call</Label>
-              <Input type="text" name="time" id="time" placeholder="best time to call during business hours" onChange={this.handleInputChange}/>
+              <Input 
+                type="text" 
+                name="time" 
+                id="time" 
+                placeholder="best time to call during business hours" 
+                onChange={this.handleInputChange}/>
             </FormGroup>
             <FormGroup>
               <Label for="message">Message</Label>
-              <Input type="textarea" name="message" id="message" placeholder="Any additional info" onChange={this.handleInputChange}/>
+              <Input 
+                type="textarea" 
+                name="message" 
+                id="message" 
+                placeholder="Any additional info" 
+                onChange={this.handleInputChange}/>
             </FormGroup>
           </Form>
           </ModalBody>
           <ModalFooter>
-            <Button className="submitbutton"color="primary" onClick={() => this.submitCallRequest(this.resetState)}>Submit Request</Button>
+            <Button 
+              className="submitbutton"
+              color="primary" 
+              onClick={() => this.submitCallRequest(this.resetState)}>Submit Request</Button>
             <Button color="secondary" onClick={this.resetState}>Cancel</Button>
           </ModalFooter>
         </Modal>
