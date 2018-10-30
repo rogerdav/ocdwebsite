@@ -14,27 +14,8 @@ a:link {
   
   
 }
-/* @media screen and (max-width: 1024px) and (orientation: landscape) {
-  #root {
-    background-image: url('../pics/test2.jpg');
-    background-size: 100vw;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    
-    
-  }  
 
-}
-@media screen and (max-width: 1024px) and (orientation: portrait) {
-  #root {
-    background-image: url('../pics/background2.jpg');
-    background-size: 100vh;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center center;
-  }  
 
-} */
 
 
 @media screen and (max-width: 1024px) {
