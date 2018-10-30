@@ -24,15 +24,12 @@ class Employment extends Component {
     return (
       <div className="employment">
         <ModalEmployment modal={this.state.modalEmploy} onClick={this.openModal}/>
-        <p className="contentheading">Work for us</p>
-        <p>
-        We are a full service cleaning company built for the now. We partner with our clients to help them in their busy lives to ensure they have the time for what matters most to them.
-        </p>
+        <p className="contentheading">Work for Us</p>
         
         <p>
-          If you are looking for a company that will view you as an asset,<br />
-          love cleaning and are built with an attention to detail.<br />
-          Then send us your resume to be considered for a position with us.
+          If you are looking for a company that will view you as an asset.<br />
+          You love cleaning and are built with attention to detail.<br />
+          Please send us your resume.
         </p>
         <Button onClick={this.openModal} className="applyButton">Apply now</Button>
           
