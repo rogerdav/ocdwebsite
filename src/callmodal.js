@@ -82,12 +82,12 @@ class ModalCall extends React.Component {
               <p className="invalidstatement">That is an invalid format</p>
             </FormGroup>
             <FormGroup>
-              <Label for="zip_code">Zip zip_code</Label>
+              <Label for="zip_code">Zip Code</Label>
               <Input type="tel" 
                       pattern="[0-9]{5}" 
                       name="zip_code" 
                       id="zip_code" 
-                      placeholder="98126" onChange={this.handleInputChange} />
+                      placeholder="00000" onChange={this.handleInputChange} />
               <p className="invalidstatement">That is an invalid format</p>
             </FormGroup>
             <FormGroup>

@@ -15,22 +15,18 @@ class AboutMandy extends Component {
         After the birth of my child I realized that I didn't want to go back to working in an outside sales position that required traveling, and being away for days or weeks at a time.
         </p>
         <p>
-        A good friend suggested that I start a cleaning business. 
-        She commented “You have had your own successful  business in the past, your home is always clean and you say that you truly enjoy cleaning, why not start a cleaning business?”
+        A good friend inspired me to start <span>OCD Crew.</span> 
+        
         </p>
         <p>
-        And shortly after the OCD Crew was born.
-        </p>
-        <p>
-        I can honestly say I truly like all my customers and enjoy making their  homes clean, organized and beautiful for them.
+        I can honestly say that I truly like all my customers and enjoy making their homes clean, organized and beautiful for them.
         </p>
         <p>
         Whether it's getting a bed and breakfast ready for a guests.<br />
         Helping to organize a space.<br />
         Doing a move in or move out clean so that the new owner or tenant has a ready to move in home.<br />
-        Cleaning an office space so that people can walk in and start the day in an organized and clean work space.<br />
-        Or organizing an area that has been bothering a client.<br />
-        If it requires, cleaning or organizing in anyway, OCD Crew is the company for you.<br />
+        Cleaning an office space so that people can walk in and start the day in a clean work space.<br />
+        If it requires, cleaning or organizing in anyway, <span>OCD Crew</span> is the company for you.<br />
         </p>
         
       </div>

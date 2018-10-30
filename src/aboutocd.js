@@ -9,18 +9,19 @@ class AboutOcd extends Component {
           OCD Crew
         </p>
         <p>
-        If it requirtes cleaning or organizing, OCD Crew is the company for you. We partner with our clients to help them in their busy lives to ensure they have the time for what matters most to them.</p>
+        We are a full-service cleaning company. If you require cleaning or organizing, <br /><span>OCD Crew</span> is the company for you.<br /> We partner with our clients to help them in their busy lives to ensure they have the time for what matters most to them.</p>
         <p>
-        All our services are customizable to accommodate our clients needs, whether cleaning, organizing or both.
-        We pride ourselves on offering, personalized, professional work time after time.
+        We can customize all of our services to accomodate our clients needs, whether cleaning, organizing or both.
+        We pride ourselves in offering personalized, professional work time after time.
         </p>
         <p>
-        Unlike many other companies we do not make you clean up before we visit.<br /> 
-        We are pet friendly.<br />
-        We listen to your needs and work with your budget.<br />
+        Unlike many other companies, we do not make you clean up before we visit and we are pet friendly.
+        </p>
+        <p>
+        We listen to your needs and work within your budget.<br />
         We provide all cleaning supplies.<br />
-        Free estimates and in home consultations.<br />
-        We take great pride in providing you with services that exceed your expectations.<br />
+        Free estimates and in-home consultations.<br />
+        We take great pride in providing you with service that exceeds your expectations.<br />
 
         </p>
        

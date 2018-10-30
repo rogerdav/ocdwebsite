@@ -15,8 +15,9 @@
   margin-top: 0;
 }
 .pagefooter p:last-child {
-  margin-top: 1%;
-  font-size: 2em;
-  padding-bottom: 2%;
+  margin-top: 0.3%;
+  font-size: 1.7em;
+  padding-bottom: 1%;
 }
+
 

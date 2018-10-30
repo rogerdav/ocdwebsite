@@ -35,7 +35,7 @@ class ContactAside extends Component {
         </Row>
         <Row>
           <Col>
-            <a href="mailto:davenport.mandy@gmail.com" >
+            <a href="mailto:info@ocdcrew.com" >
             <img className="icon full" src="https://png.icons8.com/ios/40/ffffff/email-filled.png" alt="" />
             <img className="icon mobile" src="https://png.icons8.com/ios/40/000000/email-filled.png" alt="" />
             </a>
@@ -43,12 +43,12 @@ class ContactAside extends Component {
         </Row>
         <Row>
           <Col>
-            <h5>davenport.mandy@gmail.com</h5>
+            <h5>info@ocdcrew.com</h5>
           </Col>
         </Row>
         <Row>
           <Col>
-            <Button  className="callme"  onClick={this.openModal}>Request A CallBack</Button>
+            <Button  className="callme"  onClick={this.openModal}>Request A Call</Button>
           </Col>
         </Row>
         {/* --------------------------------------------- */}
@@ -125,6 +125,14 @@ class ContactAside extends Component {
           <Col>
             <h6>
               Renton
+            </h6>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <h6>
+              Contact Us for <br />
+              Other Areas
             </h6>
           </Col>
         </Row>

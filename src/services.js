@@ -7,31 +7,25 @@ class Services extends Component {
     return (
       <div className="services">
         <p className="contentheading">Services</p>
-        <p>These are the services we provide, if a service is not listed that you require please contact us.</p>
+        <p>These are the services we provide. If a service is not listed that you are looking for, please contact us.</p>
        
           <Row>
-          <img src="https://png.icons8.com/dotty/30/000000/checked-checkbox.png" alt="" />
-          <h5>Residential</h5>
+             <h5>&#10004;  Residential</h5>
           </Row>
           <Row>
-          <img src="https://png.icons8.com/dotty/30/000000/checked-checkbox.png" alt=""/>
-          <h5>Air BnB/Bed 'n Breakfast units</h5>
+             <h5>&#10004;  Air BnB / Bed & Breakfasts</h5>
           </Row>
           <Row>
-          <img src="https://png.icons8.com/dotty/30/000000/checked-checkbox.png" alt=""/>
-          <h5>Commercial</h5>
+            <h5>&#10004;  Office</h5>
           </Row>
           <Row>
-          <img src="https://png.icons8.com/dotty/30/000000/checked-checkbox.png" alt=""/>
-          <h5>Move In / Move out</h5>
+            <h5>&#10004;  Move In / Move Out</h5>
           </Row>
           <Row>
-          <img src="https://png.icons8.com/dotty/30/000000/checked-checkbox.png" alt=""/>
-          <h5>Home and Office Organization</h5>
+            <h5>&#10004;  Home and Office Organization</h5>
           </Row>
           <Row>
-          <img src="https://png.icons8.com/dotty/30/000000/checked-checkbox.png" alt=""/>
-          <h5>A La Carte Cleaning solutions</h5>
+            <h5>&#10004;  A La Carte Cleaning Solutions</h5>
           </Row>
         
       </div>

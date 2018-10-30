@@ -23,8 +23,8 @@ a:link {
     flex-direction: column-reverse;
   }
   #root {
-    background-image: url('../pics/linen.png');
-    background-repeat: no-repeat;
+    background-image: url('../pics/mobilebackground.png');
+    /* background-repeat: no-repeat; */
     background-position-y: -5%;
    }
   
@@ -76,7 +76,7 @@ a:link {
     }
   }
   #root {
-   background-image: url('../pics/test2.jpg');
+   background-image: url('../pics/fullbackground.jpg');
    background-repeat: no-repeat;
    background-position-y: -5%;
   }

@@ -14,7 +14,7 @@ class GiftCard extends Component {
         &#8226; Those with a busy schedule<br />
         &#8226; A newborn in the house<br />
         &#8226; Dealing with recovery from illness or Surgery</p>
-        <p>Contact us to get a gift certificate that work best for their needs.</p>
+        <p>Contact us to purchase a gift certificate, best suited to your needs.</p>
 
         
 

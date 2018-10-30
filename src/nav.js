@@ -44,7 +44,7 @@ class NavHeader extends Component {
                       <NavLink to="/about" onClick={this.toggle}>About</NavLink>
                   </NavItem>
                   <NavItem>
-                      <NavLink to="/reviews" onClick={this.toggle}>What Clients Say</NavLink>
+                      <NavLink to="/reviews" onClick={this.toggle}>Reviews</NavLink>
                   </NavItem>
                   <NavItem>
                       <NavLink to="/services" onClick={this.toggle}>Services</NavLink>
