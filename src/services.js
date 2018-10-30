@@ -7,7 +7,7 @@ class Services extends Component {
     return (
       <div className="services">
         <p className="contentheading">Services</p>
-        <h5>These are the services we provide, if a service is not listed that you require please contact me</h5>
+        <p>These are the services we provide, if a service is not listed that you require please contact us.</p>
        
           <Row>
           <img src="https://png.icons8.com/dotty/30/000000/checked-checkbox.png" alt="" />
