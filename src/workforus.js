@@ -31,7 +31,7 @@ class Employment extends Component {
           You love cleaning and are built with attention to detail.<br />
           Please send us your resume.
         </p>
-        <Button onClick={this.openModal} className="applyButton">Apply now</Button>
+        <Button onClick={this.openModal} className="applyButton">Apply Now</Button>
           
         
       </div>
