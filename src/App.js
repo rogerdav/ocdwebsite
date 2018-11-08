@@ -40,11 +40,8 @@ class App extends Component {
         <Route path="/giftcard" component={GiftCard} />
         </div>
       </HashRouter> 
-        <div className="mobilePhoneHeading">
-          <h1>(206) 353-9012</h1>
-            <p>
-              Call today for a free estimate!
-            </p>
+        <div id="mobileTopPic">
+         <img src={require('./pics/fullbackground.jpg')} alt="" />
         </div>
       </Container>
       <PageFooter />

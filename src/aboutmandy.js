@@ -19,14 +19,14 @@ class AboutMandy extends Component {
         
         </p>
         <p>
-        I can honestly say that I truly like all my customers and enjoy making their homes clean, organized and beautiful for them.
-        </p>
-        <p>
         Whether it's getting a bed and breakfast ready for a guests.<br />
         Helping to organize a space.<br />
         Doing a move in or move out clean so that the new owner or tenant has a ready to move in home.<br />
         Cleaning an office space so that people can walk in and start the day in a clean work space.<br />
-        If it requires, cleaning or organizing in anyway, <span>OCD Crew</span> is the company for you.<br />
+        </p>
+        <p>
+        I can honestly say that I truly like all my customers and enjoy making their homes clean, organized and beautiful for them.<br />
+        If it requires, cleaning or organizing in anyway, <span>OCD Crew</span> is the company for you.
         </p>
         
       </div>
