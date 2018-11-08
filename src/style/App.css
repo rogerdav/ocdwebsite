@@ -15,17 +15,14 @@ a:link {
   
 }
 
-
-
-
-@media screen and (max-width: 1024px) {
+@media screen and (0px <= width <= 414px) {
   #all {
     flex-direction: column-reverse;
   }
   #root {
-    background-image: url('../pics/mobilebackground.png');
+    /* background-image: url('../pics/mobilebackground.png'); */
     /* background-repeat: no-repeat; */
-    background-position-y: -5%;
+    /* background-position-y: -5%; */
    }
   
   .row {
@@ -43,9 +40,68 @@ a:link {
     display: none;
   }
   .mobilePhoneHeading {
-    background-color: #82ad40;
-    margin-top: 0%;
-    padding-top: 5%;
+    position: absolute;
+    top: 140px;
+    left: 25%;
+  }
+  .mobilePhoneHeading h1 {
+    font-size: 125%;
+    color: white;
+
+  }
+  #mobileTopPic img {
+    /* background-image: url('../pics/fullbackground.jpg'); */
+    /* background-repeat: no-repeat;
+    background-size: contain; */
+    width: 100%;
+    /* background-color: aquamarine; */
+    /* height: 100%; */
+  }
+}
+
+
+@media screen and (min-width: 415px) and (max-width: 1024px) {
+  #all {
+    flex-direction: column-reverse;
+  }
+  #root {
+    /* background-image: url('../pics/mobilebackground.png'); */
+    /* background-repeat: no-repeat; */
+    /* background-position-y: -5%; */
+    background-color: lightgray;
+   }
+  
+  .row {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .pagefooter {
+    display: none;
+  }
+  .full {
+    display: none;
+  }
+  .mobilePhoneHeading {
+    position: absolute;
+    top: 50px;
+    left: 54%;
+  }
+  .mobilePhoneHeading h1 {
+    font-size: 150%;
+    color: white;
+
+  }
+  #mobileTopPic img {
+    /* background-image: url('../pics/fullbackground.jpg'); */
+    /* background-repeat: no-repeat;
+    background-size: contain; */
+    width: 100%;
+    /* background-color: aquamarine; */
+    /* height: auto; */
   }
 }
 
@@ -79,6 +135,9 @@ a:link {
    background-image: url('../pics/fullbackground.jpg');
    background-repeat: no-repeat;
    background-position-y: -5%;
+  }
+  #mobileTopPic {
+   display: none;
   }
 }
 

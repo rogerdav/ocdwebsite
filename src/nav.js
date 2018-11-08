@@ -32,6 +32,9 @@ class NavHeader extends Component {
       <Navbar id="fixednavbar" light expand="xl">
           <NavbarBrand href="/">
           <div id="logo"><h1>OCD Crew</h1><h5>ORGANIZING, CLEANING AND DETAILING</h5></div>
+          <div className="mobilePhoneHeading">
+          <h1>(206) 353-9012</h1>
+        </div>
           
           </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
