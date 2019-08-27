@@ -117,6 +117,13 @@ class ContactAside extends Component {
         <Row>
           <Col>
             <h6>
+             Mercer Island
+            </h6>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <h6>
              Burien
             </h6>
           </Col>
